@@ -1,0 +1,50 @@
+.gw-breadcrumb-area {
+    // background-color: $bg-white-1;
+    padding: 140px 0px;
+
+    @include screen-1440 {
+        padding: 80px 0px;
+    }
+    @include screen-992 {
+        padding: 60px 0px;
+    }
+
+    .breadcrumb-title {
+        text-align: center;
+    }
+
+    .breadcrumb-menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+
+        li {
+            a {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 130%;
+                font-family: var(--heading-font);
+                // color: $neutral-color;
+                text-transform: capitalize;
+
+                &.active {
+                    color: var(--primary-color-500);
+                }
+
+                @include screen-1440 {
+                    font-size: 18px;
+                }
+
+                @include screen-1200 {
+                    font-size: 16px;
+                }
+
+                @include screen-992 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

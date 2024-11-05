@@ -1,0 +1,45 @@
+.slider-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px; }
+
+.slider-buttons button {
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.slider-buttons button:hover {
+  background-color: #218838; }
+
+/* Arrow Icons */
+.arrow-left::before {
+  content: "\2190";
+  /* Unicode for left arrow */
+  font-size: 16px;
+  color: white; }
+
+.arrow-right::before {
+  content: "\2192";
+  /* Unicode for right arrow */
+  font-size: 16px;
+  color: white; }
+
+/* Style for the category item */
+.category-item {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333; }
+
+.owl-carousel .owl-nav {
+  display: none;
+  /* Hide default Owl Carousel navigation */ }

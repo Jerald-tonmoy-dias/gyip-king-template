@@ -1,0 +1,137 @@
+.common-frontend-form {
+    padding: 60px 60px;
+    border-radius: 20px;
+    // border: 1px solid $stroke-color;
+    // background: $bg-white-2;
+
+    @include screen-1200 {
+        padding: 30px;
+    }
+    @include screen-768 {
+        padding: 20px;
+    }
+
+    .logo-wrapper {
+        width: 215px;
+        height: 53.426px;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .social-login-wrapper {
+        width: 100%;
+        display: inline-flex;
+        padding: 12px 12px;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background-color: var(--white-color);
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+
+            @include screen-1200 {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.gw-input-wrapper {
+    .gw-label {
+        // color: $neutral-color;
+        font-family: var(--template-font);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+
+        @include screen-1440 {
+            font-size: 16px;
+        }
+
+        @include screen-1200 {
+            font-size: 14px;
+        }
+
+        .hint-txt {
+            display: inline;
+        }
+    }
+
+    .hint-txt {
+        display: block;
+        padding: 6px 0;
+       // color: $paragraph-color;
+    }
+
+    .error-msg {
+        display: block;
+        padding: 6px 0;
+        color: #F99671;
+    }
+
+    .gw-input {
+        width: 100%;
+        display: inline-flex;
+        padding: 12px 12px;
+        align-items: center;
+        border-radius: 10px;
+        // border: 1px solid $stroke-color;
+        // background: $bg-white;
+        // color: $neutral-color;
+        font-family: var(--template-font);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        &:focus-visible {
+            outline: none;
+        }
+
+        @include screen-1440 {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        @include screen-1200 {
+            font-size: 14px;
+        }
+
+        .current {
+            width: 100%;
+        }
+
+        .list {
+            width: 100%;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        .inner-number {
+            width: 100%;
+            border: none;
+        }
+
+    }
+
+
+}

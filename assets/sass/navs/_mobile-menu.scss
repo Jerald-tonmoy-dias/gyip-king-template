@@ -1,0 +1,87 @@
+/************************ mobile menu start ****************/
+.mobile-menu {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -310px;
+    // background-color: $bg-white;
+    z-index: 200;
+    padding: 20px;
+    overflow-y: scroll;
+    transition: var(--transition);
+    box-shadow: 0px 0px 12px 0px rgba(49, 33, 26, 0.20);
+    .mobile-menu-header {
+      background-color: var(--white-1);
+      padding: 8px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .mobile-logo {
+     width: 100%;
+      object-fit: contain;
+    }
+    .close {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background-color: var(--primary-color);
+      // color: $bg-white;
+
+    }
+    .logo {
+      width: 100%;
+      display: block;
+      // background-color: $bg-white-1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+      object-fit: contain;
+      @include screen-576 {
+        max-width: 150px;
+      }
+    }
+    .mobile-nav-menu {
+      margin-top: 20px;
+      li {
+        display: block;
+        + li {
+          // border-top: 1px solid $stroke-color;
+        }
+        a {
+          text-transform: capitalize;
+          display: block;
+          color: var(--primary-color);
+          padding: 10px 0;
+          font-size: 16px;
+        }
+        &.has-submenu {
+          position: relative;
+          & > i {
+            position: absolute;
+            right: 0;
+            top: 3px;
+            padding: 8px;
+            transition: var(--transition);
+            &.icon-rotate {
+              transform: rotate(180deg);
+            }
+          }
+          & > .submenu-wrapper {
+            padding-left: 15px;
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.active {
+      left: 0;
+    }
+  }
+  
+
+  

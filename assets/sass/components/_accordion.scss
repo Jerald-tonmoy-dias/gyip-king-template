@@ -1,0 +1,78 @@
+// home faq-accordion
+.faq-accordion-wrapper {
+    .accordion-item {
+        padding: 30px;
+        // border: 1px solid $stroke-color;
+        // background: $bg-white-1;
+        border-radius: 12px;
+
+        @include screen-992 {
+            padding: 20px;
+        }
+
+        .h4 {
+            font-size: 20px;
+            position: relative;
+            width: 100%;
+            text-align: left;
+            font-family: var(--heading-font);
+            margin: 0;
+            padding: 0;
+            // color: $neutral-color;
+            padding-right: 33px;
+
+            @include screen-1440 {
+                font-size: 18px;
+            }
+
+            @include screen-1200 {
+                font-size: 16px;
+            }
+
+            @include screen-992 {
+                font-size: 14px;
+            }
+
+            &::after {
+                content: '\f067';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 33px;
+                height: 33px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                // border: 1px solid $stroke-color;
+                background-color: transparent;
+                color: var(--white-color);
+                transition: all 0.3s ease;
+               // color: $paragraph-color;
+
+                @include screen-992 {
+                    width: 25px;
+                    height: 25px;
+                    font-size: 12px;
+                }
+            }
+
+            &[aria-expanded="true"] {
+                color: var(--primary-color-500);
+
+                &::after {
+                    border: 1px solid var(--primary-color-500);
+                    color: var(--primary-color-500);
+                    content: '\f068';
+                }
+            }
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    }
+}

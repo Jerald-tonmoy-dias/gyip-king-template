@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius Wallet - HTML5 Template</title>
+  <!--Essential css files-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl-slider.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--favicon-->
+  <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="gw-header">
+    <div class="top-header">
+      <div class="container">
+        <div class="row gap-2 gap-md-0">
+          <div class="col-md-8">
+            <div class="left-side">
+              <a href="#">
+                <span class="header-top-text">
+                  <img class="header-top-icon" src="./assets/img/icons/phone.png" alt="phone icon">
+                  Call Us: +1 0123 456 789
+                </span>
+              </a>
+              <a href="#">
+                <span class="header-top-text">
+                  <img class="header-top-icon" src="./assets/img/icons/email.png" alt="email icon">
+                  Mail Us: info@geniuswallet.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="right-side">
+              <div class="social-wrapper">
+                <a href="#"><img src="./assets/img/icons/hf-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hx-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hi-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hl-icon.png" alt="icon"></a>
+              </div>
+
+              <select>
+                <option value="en">English</option>
+                <option value="bn">Bangla</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4 col-lg-3">
+            <a href="index.html" class="logo">
+              <img class="logo" src="./assets/img/logo.png" alt="logo">
+            </a>
+          </div>
+          <!-- hide on mobile device -->
+          <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+            <nav class="main-menu">
+              <ul>
+                <li class="active">
+                  <a href="index.html">Home <i class="fa-solid fa-angle-down"></i> </a>
+                  <ul class="submenu">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about.html">About </a>
+                </li>
+                <li>
+                  <a href="#">API </a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us </a>
+                </li>
+                <li>
+                  <a href="#">Blog <i class="fa-solid fa-angle-down"></i> </a>
+                  <ul class="submenu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 col-lg-3">
+            <div class="auth-btns">
+              <a class="template-btn d-none d-md-inline-flex" href="#">Sign Up</a>
+              <a class="template-btn primary-btn d-none d-md-inline-flex" href="#">Log In</a>
+              <button type="button" class="d-lg-none ms-2  template-btn primary-btn moble-menu-trigger-btn"><i
+                  class="fa-solid fa-bars"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--mobile menu start-->
+  <div class="mobile-menu pp-mobile-menu-wrapper">
+    <div class="mobile-menu-header">
+      <a href="index.html"><img src="./assets/img/logo.png" alt="logo" class="mobile-logo"></a>
+      <button type="button" class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-menu">
+      <li class="has-submenu">
+        <a href="index.html">Home</a>
+
+      </li>
+
+
+      <li class="has-submenu">
+        <a href="javascript:void(0)">Pages</a>
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu-wrapper">
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li class="has-submenu">
+        <a href="javascript:void(0)">Blog</a>
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu-wrapper">
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog Details</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- need to work -->
+    <div class="d-flex d-md-none gap-2 mt-4">
+      <select>
+        <option value="en">En</option>
+        <option value="au">Au</option>
+        <option value="es">Es</option>
+      </select>
+      <select>
+        <option value="usd">USD</option>
+        <option value="inr">INR</option>
+        <option value="ngn">NGN</option>
+      </select>
+    </div>
+    <div class="d-flex gap-2 d-sm-none mt-4">
+      <a href="register.html" class="template-btn primary-outline-btn">
+        Sign Up
+      </a>
+      <a href="login.html" class="template-btn primary-btn">
+        Login Now
+      </a>
+    </div>
+  </div>
+  <!--mobile menu end-->
+
+  <!-- breadcrumb section -->
+  <div class="gw-breadcrumb-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="breadcrumb-title mb-16">Contact Us</h2>
+          <ul class="breadcrumb-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a class="active" href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main content -->
+  <div class="login-form-wrapper py-120">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-xl-6">
+          <img class="mb-40 img-fluid" src="./assets/img/contact-img.png" alt="contact img">
+
+          <div class="main-contact-info-wrapper">
+            <a href="mailto:geniusocean@gmail.com">
+              <div class="single-contact-info">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <g clip-path="url(#clip0_159_5902)">
+                      <path
+                        d="M31.3271 49.9958C29.175 49.9958 27.0208 49.1771 25.3812 47.5375C23.7917 45.95 22.9167 43.8375 22.9167 41.5896C22.9167 39.3417 23.7917 37.2312 25.3812 35.6417L35.8229 25.2L38.7687 28.1458L28.3271 38.5875C27.525 39.3896 27.0833 40.4562 27.0833 41.5896C27.0833 42.7229 27.525 43.7896 28.3271 44.5917C29.9854 46.2458 32.6771 46.2437 34.3312 44.5917L45.5187 33.4042C45.9396 32.9833 45.9396 32.2958 45.5187 31.875C45.1125 31.4688 44.4 31.4667 43.9896 31.875L32.8021 43.0625L29.8562 40.1167L41.0438 28.9292C43.025 26.95 46.4792 26.9458 48.4646 28.9292C50.5083 30.975 50.5083 34.3062 48.4646 36.35L37.2771 47.5375C35.6375 49.1771 33.4833 49.9958 31.3292 49.9958H31.3271ZM20.5792 21.0875C21.7604 22.2667 23.3792 22.8562 25 22.8583C26.6187 22.8583 28.2396 22.2687 29.4208 21.0875L48.3958 2.11042C47.25 0.827083 45.6021 0 43.75 0H6.25C4.39792 0 2.75 0.825 1.60417 2.10833L20.5792 21.0875ZM40.6854 24.1729C43.6521 22.7875 47.2417 23.0292 50 24.8562V6.39792L36.4562 19.9417L40.6854 24.1729ZM22.4333 32.6958L28.7646 26.3646C27.5771 26.825 26.3104 27.0854 25 27.0854C22.2188 27.0854 19.6021 26.0021 17.6333 24.0354L0 6.39792V39.5833H18.9229C19.3375 36.9875 20.5396 34.5896 22.4354 32.6937L22.4333 32.6958Z"
+                        fill="#5D5856" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_159_5902">
+                        <rect width="50" height="50" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="title">geniusocean@gmail.com</span>
+              </div>
+            </a>
+            
+              <div class="single-contact-info">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <path d="M39.7307 6.11662C35.7953 2.17912 30.5641 0.0124512 24.9995 0.0124512C19.4349 0.0124512 14.2036 2.17912 10.2682 6.11662C2.1474 14.2395 2.1474 27.4562 10.2849 35.5958L24.9995 49.9874L39.7307 35.5791C47.8516 27.4562 47.8516 14.2395 39.7307 6.11662ZM24.8036 27.9583C23.9974 28.7645 22.937 29.1666 21.8724 29.1666C20.8078 29.1666 19.737 28.7604 18.9224 27.9479L13.1266 22.3312L16.0286 19.3375L21.8474 24.977L33.9495 13.1L36.8745 16.0687L24.8036 27.9583Z" fill="#5D5856"/>
+                  </svg>
+                </div>
+                <span class="title">LA-41 Parker Rd, Mexico</span>
+              </div>
+          
+            <a href="tel:10012345846545413">
+              <div class="single-contact-info">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <g clip-path="url(#clip0_159_5900)">
+                      <path d="M41.6672 14.5833V2.08332C41.6672 1.53079 41.8867 1.00088 42.2774 0.610182C42.6681 0.219481 43.198 -1.24066e-05 43.7505 -1.24066e-05C44.3031 -1.24066e-05 44.833 0.219481 45.2237 0.610182C45.6144 1.00088 45.8339 1.53079 45.8339 2.08332V14.5833C45.8339 15.1359 45.6144 15.6658 45.2237 16.0565C44.833 16.4472 44.3031 16.6667 43.7505 16.6667C43.198 16.6667 42.6681 16.4472 42.2774 16.0565C41.8867 15.6658 41.6672 15.1359 41.6672 14.5833ZM35.4172 16.6667C35.9697 16.6667 36.4996 16.4472 36.8903 16.0565C37.281 15.6658 37.5005 15.1359 37.5005 14.5833V2.08332C37.5005 1.53079 37.281 1.00088 36.8903 0.610182C36.4996 0.219481 35.9697 -1.24066e-05 35.4172 -1.24066e-05C34.8647 -1.24066e-05 34.3348 0.219481 33.9441 0.610182C33.5534 1.00088 33.3339 1.53079 33.3339 2.08332V14.5833C33.3339 15.1359 33.5534 15.6658 33.9441 16.0565C34.3348 16.4472 34.8647 16.6667 35.4172 16.6667ZM48.113 34.8708C48.0505 34.8062 43.036 30.9479 43.036 30.9479C41.8325 29.8018 40.2335 29.1638 38.5716 29.1665C36.9097 29.1692 35.3128 29.8125 34.113 30.9625L30.1547 34.3083C26.9111 32.968 23.9645 30.9998 21.4843 28.5167C19.004 26.0336 17.0392 23.0847 15.7026 19.8396L19.036 15.8812C20.1836 14.6813 20.8249 13.0854 20.8269 11.425C20.8288 9.76458 20.1912 8.16722 19.0464 6.96457C19.0464 6.96457 15.1922 1.95832 15.1255 1.89374C13.9376 0.695477 12.3255 0.0133343 10.6383 -0.00499211C8.95114 -0.0233185 7.32462 0.623647 6.11095 1.79582L3.7172 3.87915C-12.3682 20.9812 29.1339 62.5021 46.2172 46.1708L48.1172 43.9833C49.3208 42.7725 49.996 41.1345 49.9952 39.4273C49.9944 37.72 49.3177 36.0805 48.113 34.8708Z" fill="#5D5856"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_159_5900">
+                        <rect width="50" height="50" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="title">100123 458 46545 413</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-6">
+          <div class="mb-40">
+            <h2 class="mb-16">We’re Here to Help You. Get
+              in Touch with Our Team Today</h2>
+            <p class="">
+              We are a Secure and Stable Platform, built with the highest standards of reliability and protection. Our
+              cutting-edge technology ensures that your data.
+            </p>
+          </div>
+
+          <div class="common-frontend-form">
+            <div class="logo-wrapper mb-24">
+              <img src="./assets/img/logo.png" alt="logo">
+            </div>
+
+            <!-- form -->
+            <div class="row g-4">
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <!--  add .error on error -->
+                  <input type="text" class="gw-input"  placeholder="Enter Name">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <!--  add .error on error -->
+                  <input type="email" class="gw-input"  placeholder="Enter Email">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <div class="gw-input">
+                    <select>
+                      <option>+880</option>
+                      <option>+999</option>
+                    </select>
+                    <input class="w-100 ms-2 inner-number" type="number" placeholder="Phone number">
+                  </div>
+
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <!--  add .error on error -->
+                  <input type="text" class="gw-input" placeholder="Subject">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="gw-input-wrapper">
+                  <textarea class="gw-input" placeholder="How can we help you? Get in touch"></textarea>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <input class="" id="remember" type="checkbox">
+                <label for="remember">I Agree With Your Terms And Conditions.</label>
+              </div>
+            
+     
+              <div class="col-12">
+                <button class="template-btn primary-btn w-100">Submit</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- map section -->
+  <div class="map-section pb-110">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.458912338747!2d90.39145011204485!3d23.87334037849747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1c1b79fa481%3A0x59dde35061261ea6!2sGeniusOcean!5e0!3m2!1sen!2sbd!4v1727866752999!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- footer section  -->
+  <footer class="gw-footer-section pt-120">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Menu</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Get Started</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Register as User</a></li>
+              <li><a href="#">Login as User</a></li>
+              <li><a href="#">Register as Merchant</a></li>
+              <li><a href="#">Login as Merchant</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Pages</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Frequently Asked Question</a></li>
+              <li><a href="#">Announcement</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Social Link</h4>
+            <div class="social-wrapper">
+              <a href="#"><img class="icon" src="./assets/img/icons/linkedin.png" alt="icon"></a>
+              <a href="#"><img class="icon" src="./assets/img/icons/communication.png" alt="icon"></a>
+              <a href="#"><img class="icon" src="./assets/img/icons/twitter.png" alt="icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright-area">
+        <div class="row gy-2 gy-sm-0 justify-content-center justify-content-lg-end">
+          <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
+            <p class="copyright-txt">© All Right Reserved by <a href="#">Genius Admin</a></p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+            <ul class="copyright-menu">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms And Condition</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scroll to top -->
+  <button type="button" class="scroll-top-btn">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
+
+  <!--Esential Js Files-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-slider.js"></script>
+  <script src="assets/js/nice-select.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

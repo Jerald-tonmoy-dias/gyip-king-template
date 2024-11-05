@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius Wallet - HTML5 Template</title>
+  <!--Essential css files-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl-slider.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--favicon-->
+  <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="gw-header">
+    <div class="top-header">
+      <div class="container">
+        <div class="row gap-2 gap-md-0">
+          <div class="col-md-8">
+            <div class="left-side">
+              <a href="#">
+                <span class="header-top-text">
+                  <img class="header-top-icon" src="./assets/img/icons/phone.png" alt="phone icon">
+                  Call Us: +1 0123 456 789
+                </span>
+              </a>
+              <a href="#">
+                <span class="header-top-text">
+                  <img class="header-top-icon" src="./assets/img/icons/email.png" alt="email icon">
+                  Mail Us: info@geniuswallet.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="right-side">
+              <div class="social-wrapper">
+                <a href="#"><img src="./assets/img/icons/hf-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hx-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hi-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hl-icon.png" alt="icon"></a>
+              </div>
+
+              <select>
+                <option value="en">English</option>
+                <option value="bn">Bangla</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4 col-lg-3">
+            <a href="index.html" class="logo">
+              <img class="logo" src="./assets/img/logo.png" alt="logo">
+            </a>
+          </div>
+          <!-- hide on mobile device -->
+          <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+            <nav class="main-menu">
+              <ul>
+                <li class="active">
+                  <a href="index.html">Home <i class="fa-solid fa-angle-down"></i> </a>
+                  <ul class="submenu">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about.html">About </a>
+                </li>
+                <li>
+                  <a href="#">API </a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us </a>
+                </li>
+                <li>
+                  <a href="#">Blog <i class="fa-solid fa-angle-down"></i> </a>
+                  <ul class="submenu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 col-lg-3">
+            <div class="auth-btns">
+              <a class="template-btn d-none d-md-inline-flex" href="#">Sign Up</a>
+              <a class="template-btn primary-btn d-none d-md-inline-flex" href="#">Log In</a>
+              <button type="button" class="d-lg-none ms-2  template-btn primary-btn moble-menu-trigger-btn"><i
+                  class="fa-solid fa-bars"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--mobile menu start-->
+  <div class="mobile-menu pp-mobile-menu-wrapper">
+    <div class="mobile-menu-header">
+      <a href="index.html"><img src="./assets/img/logo.png" alt="logo" class="mobile-logo"></a>
+      <button type="button" class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-menu">
+      <li class="has-submenu">
+        <a href="index.html">Home</a>
+
+      </li>
+
+
+      <li class="has-submenu">
+        <a href="javascript:void(0)">Pages</a>
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu-wrapper">
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li class="has-submenu">
+        <a href="javascript:void(0)">Blog</a>
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu-wrapper">
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog Details</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- need to work -->
+    <div class="d-flex d-md-none gap-2 mt-4">
+      <select>
+        <option value="en">En</option>
+        <option value="au">Au</option>
+        <option value="es">Es</option>
+      </select>
+      <select>
+        <option value="usd">USD</option>
+        <option value="inr">INR</option>
+        <option value="ngn">NGN</option>
+      </select>
+    </div>
+    <div class="d-flex gap-2 d-sm-none mt-4">
+      <a href="register.html" class="template-btn primary-outline-btn">
+        Sign Up
+      </a>
+      <a href="login.html" class="template-btn primary-btn">
+        Login Now
+      </a>
+    </div>
+  </div>
+  <!--mobile menu end-->
+
+  <!-- breadcrumb section -->
+  <div class="gw-breadcrumb-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="breadcrumb-title mb-16 wow fadeInUp">Blog</h2>
+          <ul class="breadcrumb-menu wow fadeInUp" data-wow-delay=".1s">
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a class="active" href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- blog wrapper start -->
+  <div class="blog-main-wrapper">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="blog-list-wrapper wow fadeInUp">
+            <img class="thumb" src="./assets/img/blog-img.png" alt="blog img">
+            <h5 class="title">Far far away, behind the word
+              mountains, far from the....</h5>
+            <p class="des">
+              Make Online Banking Easier Comfortable
+              speed With intuitive interfaces and
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-sidebar">
+            <div class="sidebar-search-widget single-blog-sidebar-widget bg-white-1 wow fadeInUp">
+              <form class="form-wrapper" action="#">
+                <input placeholder="Search here" class="search-input" type="text"><button class="submit-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <g clip-path="url(#clip0_249_623)">
+                      <path
+                        d="M20.8132 19.482L16.7808 15.4725C17.8634 14.0416 18.44 12.1001 18.4849 9.67093C18.3887 4.08385 15.2702 0.98735 9.69591 0.950684C4.05474 0.986434 0.916992 4.26168 0.916992 9.67002C0.916992 15.3488 4.05749 18.3894 9.70691 18.4224C12.1168 18.4077 14.051 17.8485 15.4847 16.7678L19.5207 20.7819C19.9956 21.2329 20.5575 21.0486 20.8169 20.7782C21.168 20.4134 21.1726 19.8386 20.8132 19.482ZM2.75033 9.68652C2.83924 5.0711 5.11441 2.81243 9.69499 2.78402C14.2316 2.81335 16.5727 5.14077 16.6516 9.67002C16.5654 14.3634 14.3553 16.5615 9.70691 16.589C5.05299 16.5615 2.84199 14.3689 2.75033 9.68652Z"
+                        fill="#ffffff" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_249_623">
+                        <rect width="22" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+            <div class="single-blog-sidebar-widget wow fadeInUp">
+              <h4 class="blog-heading">Categories</h4>
+              <ul class="categories-list">
+                <li>
+                  <a href="#">
+                    <span class="text">Online banking Service</span>
+                    <span class="number">10</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text">Credit Card Service</span>
+                    <span class="number">05</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text">Online Payment</span>
+                    <span class="number">20</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text">Internet Banking</span>
+                    <span class="number">01</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text">Online banking Service</span>
+                    <span class="number">06</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="single-blog-sidebar-widget wow fadeInUp">
+              <h4 class="blog-heading">Recent Post</h4>
+              <div class="sm-blog-wrapper">
+                <div class="single-sm-blog-card">
+                  <a href="#"><img alt="sm blog image" src="./assets/img/sm-blog1.png"></a>
+                  <div class="sm-blog-content">
+                    <h6 class="blog-title">
+                      <a href="#">Understanding Credit
+                        Scores What They Are Matter</a>
+                    </h6>
+                    <span class="date-link">
+                      <svg class="date-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 18 18" fill="none">
+                        <g clip-path="url(#clip0_1726_85234)">
+                          <path
+                            d="M14.25 1.5H13.5V0.75C13.5 0.551088 13.421 0.360322 13.2803 0.21967C13.1397 0.0790176 12.9489 0 12.75 0C12.5511 0 12.3603 0.0790176 12.2197 0.21967C12.079 0.360322 12 0.551088 12 0.75V1.5H6V0.75C6 0.551088 5.92098 0.360322 5.78033 0.21967C5.63968 0.0790176 5.44891 0 5.25 0C5.05109 0 4.86032 0.0790176 4.71967 0.21967C4.57902 0.360322 4.5 0.551088 4.5 0.75V1.5H3.75C2.7558 1.50119 1.80267 1.89666 1.09966 2.59966C0.396661 3.30267 0.00119089 4.2558 0 5.25L0 14.25C0.00119089 15.2442 0.396661 16.1973 1.09966 16.9003C1.80267 17.6033 2.7558 17.9988 3.75 18H14.25C15.2442 17.9988 16.1973 17.6033 16.9003 16.9003C17.6033 16.1973 17.9988 15.2442 18 14.25V5.25C17.9988 4.2558 17.6033 3.30267 16.9003 2.59966C16.1973 1.89666 15.2442 1.50119 14.25 1.5ZM1.5 5.25C1.5 4.65326 1.73705 4.08097 2.15901 3.65901C2.58097 3.23705 3.15326 3 3.75 3H14.25C14.8467 3 15.419 3.23705 15.841 3.65901C16.2629 4.08097 16.5 4.65326 16.5 5.25V6H1.5V5.25ZM14.25 16.5H3.75C3.15326 16.5 2.58097 16.2629 2.15901 15.841C1.73705 15.419 1.5 14.8467 1.5 14.25V7.5H16.5V14.25C16.5 14.8467 16.2629 15.419 15.841 15.841C15.419 16.2629 14.8467 16.5 14.25 16.5Z"
+                            fill="#3A4B68"></path>
+                          <path
+                            d="M9 12.375C9.62132 12.375 10.125 11.8713 10.125 11.25C10.125 10.6287 9.62132 10.125 9 10.125C8.37868 10.125 7.875 10.6287 7.875 11.25C7.875 11.8713 8.37868 12.375 9 12.375Z"
+                            fill="#3A4B68"></path>
+                          <path
+                            d="M5.25 12.375C5.87132 12.375 6.375 11.8713 6.375 11.25C6.375 10.6287 5.87132 10.125 5.25 10.125C4.62868 10.125 4.125 10.6287 4.125 11.25C4.125 11.8713 4.62868 12.375 5.25 12.375Z"
+                            fill="#3A4B68"></path>
+                          <path
+                            d="M12.75 12.375C13.3713 12.375 13.875 11.8713 13.875 11.25C13.875 10.6287 13.3713 10.125 12.75 10.125C12.1287 10.125 11.625 10.6287 11.625 11.25C11.625 11.8713 12.1287 12.375 12.75 12.375Z"
+                            fill="#3A4B68"></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1726_85234">
+                            <rect width="18" height="18" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      October 14, 2024
+                    </span>
+                  </div>
+                </div>
+                <div class="single-sm-blog-card">
+                  <a href="#"><img alt="sm blog image" src="./assets/img/sm-blog1.png"></a>
+                  <div class="sm-blog-content">
+                    <h6 class="blog-title">
+                      <a href="#">Understanding Credit
+                        Scores What They Are Matter</a>
+                    </h6>
+                    <span class="date-link">
+                      <svg class="date-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 18 18" fill="none">
+                        <g clip-path="url(#clip0_1726_8523)">
+                          <path
+                            d="M14.25 1.5H13.5V0.75C13.5 0.551088 13.421 0.360322 13.2803 0.21967C13.1397 0.0790176 12.9489 0 12.75 0C12.5511 0 12.3603 0.0790176 12.2197 0.21967C12.079 0.360322 12 0.551088 12 0.75V1.5H6V0.75C6 0.551088 5.92098 0.360322 5.78033 0.21967C5.63968 0.0790176 5.44891 0 5.25 0C5.05109 0 4.86032 0.0790176 4.71967 0.21967C4.57902 0.360322 4.5 0.551088 4.5 0.75V1.5H3.75C2.7558 1.50119 1.80267 1.89666 1.09966 2.59966C0.396661 3.30267 0.00119089 4.2558 0 5.25L0 14.25C0.00119089 15.2442 0.396661 16.1973 1.09966 16.9003C1.80267 17.6033 2.7558 17.9988 3.75 18H14.25C15.2442 17.9988 16.1973 17.6033 16.9003 16.9003C17.6033 16.1973 17.9988 15.2442 18 14.25V5.25C17.9988 4.2558 17.6033 3.30267 16.9003 2.59966C16.1973 1.89666 15.2442 1.50119 14.25 1.5ZM1.5 5.25C1.5 4.65326 1.73705 4.08097 2.15901 3.65901C2.58097 3.23705 3.15326 3 3.75 3H14.25C14.8467 3 15.419 3.23705 15.841 3.65901C16.2629 4.08097 16.5 4.65326 16.5 5.25V6H1.5V5.25ZM14.25 16.5H3.75C3.15326 16.5 2.58097 16.2629 2.15901 15.841C1.73705 15.419 1.5 14.8467 1.5 14.25V7.5H16.5V14.25C16.5 14.8467 16.2629 15.419 15.841 15.841C15.419 16.2629 14.8467 16.5 14.25 16.5Z"
+                            fill="#3A4B68"></path>
+                          <path
+                            d="M9 12.375C9.62132 12.375 10.125 11.8713 10.125 11.25C10.125 10.6287 9.62132 10.125 9 10.125C8.37868 10.125 7.875 10.6287 7.875 11.25C7.875 11.8713 8.37868 12.375 9 12.375Z"
+                            fill="#3A4B68"></path>
+                          <path
+                            d="M5.25 12.375C5.87132 12.375 6.375 11.8713 6.375 11.25C6.375 10.6287 5.87132 10.125 5.25 10.125C4.62868 10.125 4.125 10.6287 4.125 11.25C4.125 11.8713 4.62868 12.375 5.25 12.375Z"
+                            fill="#3A4B68"></path>
+                          <path
+                            d="M12.75 12.375C13.3713 12.375 13.875 11.8713 13.875 11.25C13.875 10.6287 13.3713 10.125 12.75 10.125C12.1287 10.125 11.625 10.6287 11.625 11.25C11.625 11.8713 12.1287 12.375 12.75 12.375Z"
+                            fill="#3A4B68"></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1726_8523">
+                            <rect width="18" height="18" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      October 14, 2024
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="single-blog-sidebar-widget wow fadeInUp">
+              <h4 class="blog-heading">Tags</h4>
+              <div class="sm-tags-wrapper">
+                <a class="tag-link" href="#">Banking app</a>
+                <a class="tag-link" href="#">Credit Card</a>
+                <a class="tag-link" href="#">Online Loan</a>
+                <a class="tag-link" href="#">Mobile Banking</a>
+              </div>
+            </div>
+
+            <div class="single-blog-sidebar-widget wow fadeInUp">
+              <h4 class="blog-heading">Follow us</h4>
+              <div class="social-icons-wraper">
+                <a class="social-icon-link" href="#">
+                  <img src="./assets/img/icons/social-icon1.png" alt="social icon">
+                </a>
+                <a class="social-icon-link" href="#">
+                  <img src="./assets/img/icons/social-icon2.png" alt="social icon">
+                </a>
+                <a class="social-icon-link" href="#">
+                  <img src="./assets/img/icons/social-icon3.png" alt="social icon">
+                </a>
+                <a class="social-icon-link" href="#">
+                  <img src="./assets/img/icons/social-icon4.png" alt="social icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- blog wrapper end -->
+
+  <!-- footer section  -->
+  <footer class="gw-footer-section pt-120">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Menu</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Get Started</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Register as User</a></li>
+              <li><a href="#">Login as User</a></li>
+              <li><a href="#">Register as Merchant</a></li>
+              <li><a href="#">Login as Merchant</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Pages</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Frequently Asked Question</a></li>
+              <li><a href="#">Announcement</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Social Link</h4>
+            <div class="social-wrapper">
+              <a href="#"><img class="icon" src="./assets/img/icons/linkedin.png" alt="icon"></a>
+              <a href="#"><img class="icon" src="./assets/img/icons/communication.png" alt="icon"></a>
+              <a href="#"><img class="icon" src="./assets/img/icons/twitter.png" alt="icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright-area">
+        <div class="row gy-2 gy-sm-0 justify-content-center justify-content-lg-end">
+          <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
+            <p class="copyright-txt">© All Right Reserved by <a href="#">Genius Admin</a></p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+            <ul class="copyright-menu">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms And Condition</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scroll to top -->
+  <button type="button" class="scroll-top-btn">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
+
+  <!--Esential Js Files-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-slider.js"></script>
+  <script src="assets/js/nice-select.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

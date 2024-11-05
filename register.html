@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius Wallet - HTML5 Template</title>
+
+  <!--Essential css files-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl-slider.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--favicon-->
+  <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="gw-header">
+    <div class="top-header">
+      <div class="container">
+        <div class="row gap-2 gap-md-0">
+          <div class="col-md-8">
+            <div class="left-side">
+              <a href="#">
+                <span class="header-top-text">
+                  <img class="header-top-icon" src="./assets/img/icons/phone.png" alt="phone icon">
+                  Call Us: +1 0123 456 789
+                </span>
+              </a>
+              <a href="#">
+                <span class="header-top-text">
+                  <img class="header-top-icon" src="./assets/img/icons/email.png" alt="email icon">
+                  Mail Us: info@geniuswallet.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="right-side">
+              <div class="social-wrapper">
+                <a href="#"><img src="./assets/img/icons/hf-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hx-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hi-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hl-icon.png" alt="icon"></a>
+              </div>
+
+              <select>
+                <option value="en">English</option>
+                <option value="bn">Bangla</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4 col-lg-3">
+            <a href="index.html" class="logo">
+              <img class="logo" src="./assets/img/logo.png" alt="logo">
+            </a>
+          </div>
+          <!-- hide on mobile device -->
+          <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+            <nav class="main-menu">
+              <ul>
+                <li class="active">
+                  <a href="index.html">Home <i class="fa-solid fa-angle-down"></i> </a>
+                  <ul class="submenu">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about.html">About </a>
+                </li>
+                <li>
+                  <a href="#">API </a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us </a>
+                </li>
+                <li>
+                  <a href="#">Blog <i class="fa-solid fa-angle-down"></i> </a>
+                  <ul class="submenu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 col-lg-3">
+            <div class="auth-btns">
+              <a class="template-btn d-none d-md-inline-flex" href="#">Sign Up</a>
+              <a class="template-btn primary-btn d-none d-md-inline-flex" href="#">Log In</a>
+              <button type="button" class="d-lg-none ms-2  template-btn primary-btn moble-menu-trigger-btn"><i
+                  class="fa-solid fa-bars"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--mobile menu start-->
+  <div class="mobile-menu pp-mobile-menu-wrapper">
+    <div class="mobile-menu-header">
+      <a href="index.html"><img src="./assets/img/logo.png" alt="logo" class="mobile-logo"></a>
+      <button type="button" class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-menu">
+      <li class="has-submenu">
+        <a href="index.html">Home</a>
+
+      </li>
+
+
+      <li class="has-submenu">
+        <a href="javascript:void(0)">Pages</a>
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu-wrapper">
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li class="has-submenu">
+        <a href="javascript:void(0)">Blog</a>
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu-wrapper">
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog Details</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- need to work -->
+    <div class="d-flex d-md-none gap-2 mt-4">
+      <select>
+        <option value="en">En</option>
+        <option value="au">Au</option>
+        <option value="es">Es</option>
+      </select>
+      <select>
+        <option value="usd">USD</option>
+        <option value="inr">INR</option>
+        <option value="ngn">NGN</option>
+      </select>
+    </div>
+    <div class="d-flex gap-2 d-sm-none mt-4">
+      <a href="register.html" class="template-btn primary-outline-btn">
+        Sign Up
+      </a>
+      <a href="login.html" class="template-btn primary-btn">
+        Login Now
+      </a>
+    </div>
+  </div>
+  <!--mobile menu end-->
+
+  <!-- breadcrumb section -->
+  <div class="gw-breadcrumb-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="breadcrumb-title mb-16 wow fadeInUp">Register</h2>
+          <ul class="breadcrumb-menu wow fadeInUp" data-wow-delay=".1s">
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a class="active" href="#">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-form-wrapper py-120">
+    <div class="container">
+      <div class="row justify-content-center mb-40 wow fadeInUp">
+        <div class="col-md-7 text-center">
+          <h2 class="mb-16">Open Your Account Today
+            and Enjoy Exclusive Benefits!</h2>
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div class="col-lg-6 col-xl-6 d-none d-lg-block wow fadeInUp">
+          <img class="login-img" src="./assets/img/login-img-2.png" alt="login img">
+        </div>
+        <div class="col-lg-6 col-xl-6 wow fadeInUp" data-wow-delay=".1s">
+          <div class="common-frontend-form">
+            <div class="logo-wrapper mb-24">
+              <img src="./assets/img/logo.png" alt="logo">
+            </div>
+
+            <h3 class="title text-center mb-40">Create An Account</h3>
+
+            <p class="p-with-link mb-20 text-center">Already have an account? <a href="#">Log In</a></p>
+
+            <!-- form -->
+            <div class="row g-4">
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-2" class="gw-label mb-8">Name<span class="hint-txt d-none">(hint)</span></label>
+                  <!--  add .error on error -->
+                  <input type="text" class="gw-input" id="gw-input-2" placeholder="Enter Name">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-3" class="gw-label mb-8">Email Address<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <!--  add .error on error -->
+                  <input type="email" class="gw-input" id="gw-input-3" placeholder="Enter Email">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-33" class="gw-label mb-8">Email Address<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <select id="gw-input-33" class="gw-input w-100">
+                    <option value="bn">Bangladesh</option>
+                    <option value="us">Usa</option>
+                    <option value="aus">Australia</option>
+                  </select>
+
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-4" class="gw-label mb-8">Email Address<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <div class="gw-input">
+                    <select id="gw-input-4">
+                      <option>+880</option>
+                      <option>+999</option>
+                    </select>
+                    <input class="w-100 ms-2 inner-number" type="number" placeholder="Phone number">
+                  </div>
+
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-5" class="gw-label mb-8">Address<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <!--  add .error on error -->
+                  <input type="text" class="gw-input" id="gw-input-5" placeholder="Address">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-6" class="gw-label mb-8">Password<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <!--  add .error on error -->
+                  <input type="email" class="gw-input" id="gw-input-6" placeholder="Your Password*">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-7" class="gw-label mb-8">Confirm Password<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <!--  add .error on error -->
+                  <input type="email" class="gw-input" id="gw-input-7" placeholder="Confirm Password*">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="template-btn primary-btn w-100">Sign Up</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer section  -->
+  <footer class="gw-footer-section pt-120">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Menu</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Get Started</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Register as User</a></li>
+              <li><a href="#">Login as User</a></li>
+              <li><a href="#">Register as Merchant</a></li>
+              <li><a href="#">Login as Merchant</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Pages</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Frequently Asked Question</a></li>
+              <li><a href="#">Announcement</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Social Link</h4>
+            <div class="social-wrapper">
+              <a href="#"><img class="icon" src="./assets/img/icons/linkedin.png" alt="icon"></a>
+              <a href="#"><img class="icon" src="./assets/img/icons/communication.png" alt="icon"></a>
+              <a href="#"><img class="icon" src="./assets/img/icons/twitter.png" alt="icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright-area">
+        <div class="row gy-2 gy-sm-0 justify-content-center justify-content-lg-end">
+          <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
+            <p class="copyright-txt">© All Right Reserved by <a href="#">Genius Admin</a></p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+            <ul class="copyright-menu">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms And Condition</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scroll to top -->
+  <button type="button" class="scroll-top-btn">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
+
+  <!--Esential Js Files-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-slider.js"></script>
+  <script src="assets/js/nice-select.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

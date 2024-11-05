@@ -1,0 +1,51 @@
+.template-btn {
+    display: inline-flex;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    font-family: var(--template-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+
+    @include screen-1440 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+// primary btn
+.primary-btn {
+    @extend .template-btn;
+    background: var(--primary-color-500);
+    color: var(--white-color);
+}
+
+.outline-primary-btn {
+    @extend .template-btn;
+    background: var(--white-color);
+    color: var(--primary-color-500);
+    border: 1px solid var(--primary-color-500);
+}
+
+// secondary btn
+.secondary-outline-btn {
+    @extend .template-btn;
+    padding: 12px 24px;
+    border-radius: 42px;
+    border: 1px solid var(--secondary-color-500);
+    color: var(--neutral-color-950);
+    line-height: 130%;
+}
+
+// dark btn
+.dark-btn {
+    @extend .template-btn;
+    background: var(--neutral-color-800);
+    color: var(--white-color);
+}

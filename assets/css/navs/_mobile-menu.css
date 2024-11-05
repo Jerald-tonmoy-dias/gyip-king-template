@@ -1,0 +1,67 @@
+.mobile-menu {
+  position: fixed;
+  top: 0px;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.99);
+  z-index: 2;
+  padding: 30px 30px;
+  visibility: hidden;
+  left: -350px;
+  opacity: 0; }
+  .mobile-menu .logo-area {
+    position: relative; }
+    .mobile-menu .logo-area .close-menu {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 0px;
+      width: 35px;
+      height: 35px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      line-height: 37px;
+      text-align: center; }
+      .mobile-menu .logo-area .close-menu i {
+        font-size: 18px;
+        color: #666; }
+    .mobile-menu .logo-area .navbar-logo {
+      display: inline-block;
+      margin-bottom: 10px; }
+  .mobile-menu .mobile-menu-list li {
+    display: block;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2); }
+    .mobile-menu .mobile-menu-list li:last-child {
+      border-bottom: 0px; }
+    .mobile-menu .mobile-menu-list li a {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 44px;
+      position: relative;
+      color: #333;
+      width: 100%;
+      display: block; }
+      .mobile-menu .mobile-menu-list li a .toggle-icon {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 0px; }
+    .mobile-menu .mobile-menu-list li.go-dropdown .main-link.active {
+      color: red; }
+    .mobile-menu .mobile-menu-list li.go-dropdown .go-dropdown-menu {
+      display: none;
+      position: relative;
+      padding-left: 30px; }
+      .mobile-menu .mobile-menu-list li.go-dropdown .go-dropdown-menu li:first-child {
+        border-top: 1px dashed rgba(0, 0, 0, 0.2); }
+      .mobile-menu .mobile-menu-list li.go-dropdown .go-dropdown-menu li a {
+        font-size: 16px; }
+        .mobile-menu .mobile-menu-list li.go-dropdown .go-dropdown-menu li a i {
+          margin-right: 4px; }

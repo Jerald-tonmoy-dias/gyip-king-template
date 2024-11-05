@@ -1,0 +1,144 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  font-family: var(--heading-font);
+
+  @include screen-1440 {
+    font-size: 48px;
+  }
+
+  @include screen-1200 {
+    font-size: 42px;
+  }
+
+  @include screen-992 {
+    font-size: 38px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  font-family: var(--heading-font);
+
+  @include screen-1440 {
+    font-size: 42px;
+  }
+
+  @include screen-1200 {
+    font-size: 38px;
+  }
+
+  @include screen-992 {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  font-family: var(--heading-font);
+
+  @include screen-1440 {
+    font-size: 38px;
+  }
+
+  @include screen-1200 {
+    font-size: 32px;
+  }
+
+  @include screen-992 {
+    font-size: 28px;
+  }
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  font-family: var(--heading-font);
+
+  @include screen-1440 {
+    font-size: 30px;
+  }
+
+  @include screen-1200 {
+    font-size: 28px;
+  }
+
+  @include screen-992 {
+    font-size: 24px;
+  }
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  font-family: var(--heading-font);
+
+  @include screen-1440 {
+    font-size: 20px;
+  }
+
+  @include screen-1200 {
+    font-size: 18px;
+  }
+
+  @include screen-992 {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  font-family: var(--heading-font);
+
+  @include screen-1440 {
+    font-size: 18px;
+  }
+
+  @include screen-1200 {
+    font-size: 16px;
+  }
+
+  @include screen-992 {
+    font-size: 14px;
+  }
+}
+
+p {
+  font-family: var(--template-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+ // color: $paragraph-color;
+
+
+  @include screen-1440 {
+    font-size: 16px;
+  }
+
+  @include screen-1200 {
+    font-size: 14px;
+  }
+
+}

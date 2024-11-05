@@ -1,0 +1,242 @@
+// padding
+.p-24 {
+  padding: 24px;
+}
+
+.py-24 {
+  padding: 24px 0;
+}
+
+.py-120 {
+  padding: 120px 0;
+
+  @include screen-1440 {
+    padding: 80px 0;
+  }
+
+  @include screen-992 {
+    padding: 60px 0;
+  }
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+
+  @include screen-1440 {
+    padding-bottom: 80px;
+  }
+
+  @include screen-992 {
+    padding-bottom: 60px;
+  }
+}
+
+.pt-120 {
+  padding-top: 120px;
+
+  @include screen-1440 {
+    padding-top: 80px;
+  }
+
+  @include screen-992 {
+    padding-top: 60px;
+  }
+}
+
+// margin
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+
+.mb-6 {
+  margin-bottom: 6px !important;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+
+.my-12 {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.mb-14 {
+  margin-bottom: 14px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+
+  @include screen-768 {
+    margin-bottom: 14px;
+  }
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+
+  @include screen-768 {
+    margin-bottom: 16px;
+  }
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+
+  @include screen-768 {
+    margin-bottom: 20px;
+  }
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+
+  @include screen-768 {
+    margin-top: 16px;
+  }
+}
+
+.mt-32 {
+  margin-top: 32px;
+
+  @include screen-768 {
+    margin-top: 24px;
+  }
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+
+  @include screen-768 {
+    margin-bottom: 24px;
+  }
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+
+  @include screen-768 {
+    margin-bottom: 20px;
+  }
+}
+
+.mt-40 {
+  margin-top: 40px;
+
+  @include screen-768 {
+    margin-top: 20px;
+  }
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+
+  @include screen-768 {
+    margin-bottom: 32px;
+  }
+}
+.mb-60 {
+  margin-bottom: 60px;
+
+  @include screen-768 {
+    margin-bottom: 40px;
+  }
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+
+  @include screen-768 {
+    margin-bottom: 40px;
+  }
+}
+
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  @include screen-768 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.mt-48 {
+  margin-top: 48px;
+
+  @include screen-768 {
+    margin-top: 32px;
+  }
+}
+
+.mt-120 {
+  margin-top: 120px;
+
+  @include screen-768 {
+    margin-top: 60px;
+  }
+}
+
+// width
+.max-w-105 {
+  max-width: 105px;
+  width: 100%;
+}
+
+.max-w-116 {
+  max-width: 116px;
+  width: 100%;
+}
+
+.max-w-500 {
+  max-width: 500px;
+}
+
+.max-w-720 {
+  max-width: 720px;
+}
+
+.min-h-200 {
+  min-height: 200px !important;
+}
+
+.w-75 {
+  width: 80%;
+}
+
+.max-w-400 {
+  max-width: 400px;
+  width: 400px;
+}
+
+.max-w-595 {
+  width: 100%;
+  max-width: 595px;
+}
+
+
+// gap
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-16 {
+  gap: 16px;
+}

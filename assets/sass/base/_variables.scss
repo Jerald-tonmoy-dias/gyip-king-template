@@ -1,0 +1,63 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* CSS Variables */
+:root {
+  /* Template Font */
+  --template-font: "Poppins", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+
+  /* Default Colors */
+  --white-color: #ffffff;
+  --dark-color: #030712;
+
+  /* Neutral Colors */
+  --neutral-color-50: #f7f8f8;
+  --neutral-color-100: #e6e7e8;
+  --neutral-color-200: #d4d6d8;
+  --neutral-color-300: #bfc2c6;
+  --neutral-color-400: #adb1b6;
+  --neutral-color-500: #8c9298;
+  --neutral-color-600: #666d76;
+  --neutral-color-700: #404953;
+  --neutral-color-800: #333d48;
+  --neutral-color-900: #1a2431;
+  --neutral-color-950: #000c1a;
+
+  /* Primary Colors */
+  --primary-color-50: #E5F2FF;
+  --primary-color-100: #CCE5FF;
+  --primary-color-200: #99CAFF;
+  --primary-color-300: #66B0FF;
+  --primary-color-400: #3395FF;
+  --primary-color-500: #007BFF;
+  --primary-color-600: #0062CC;
+  --primary-color-700: #004A99;
+  --primary-color-800: #003166;
+  --primary-color-900: #001933;
+  --primary-color-950: #000C1A;
+
+  /* Secondary Colors */
+  --secondary-color-50: #E6F9EE;
+  --secondary-color-100: #CDF4DD;
+  --secondary-color-200: #9FEABF;
+  --secondary-color-300: #6DDE9D;
+  --secondary-color-400: #3BD37B;
+  --secondary-color-500: #27AE60;
+  --secondary-color-600: #1F894C;
+  --secondary-color-700: #176839;
+  --secondary-color-800: #104727;
+  --secondary-color-900: #072112;
+  --secondary-color-950: #041109;
+
+  /* Additional Colors */
+  --tertiary-color-500: #FFC107;
+  --positive-color-500: #27BE69;
+  --negative-color-500: #F2415A;
+  --warning-color-500: #FFBF0F;
+  --info-color-500: #295BFF;
+
+  /* Transitions */
+  --transition: all 0.3s ease-in;
+  --transition2: all 0.1s ease-out;
+}

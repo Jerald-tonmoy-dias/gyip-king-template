@@ -1,0 +1,12 @@
+page
+---------
+1.index.html 
+2.all-post.html
+3.add-new-post.html
+4.approved-post.html
+5.pending-post.html
+6.schedule-post.html
+7.draft-post.html
+8.create-adds.html
+9.all-ads.html
+9.ads-details.html

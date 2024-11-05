@@ -1,0 +1,44 @@
+/*
+Theme Name: GHYIP -  HTML5 Template
+Author: GeniusOcean
+Author URI: https://codecanyon.net/user/geniusocean/portfolio
+Tags: ecommerce, dashboard, shop, geniusocean
+Description: GHYIP HTML5 Template
+Version: 1.0.0
+*/
+
+/************************************** base css **************************************/
+@import "base/variables";
+@import "base/mixin";
+@import "base/reset";
+@import "base/typography";
+@import "base/spacing";
+
+/******************************* theme css **********************************/
+@import "theme/theme-class";
+@import "theme/animations";
+
+/******************************** layout ******************************/
+@import "layout/header";
+@import "layout/footer";
+
+/******************************** components ******************************/
+@import "components/breadcrumb";
+@import "components/buttons";
+@import "components/inputs";
+@import "components/select";
+@import "components/single";
+@import "components/table";
+@import "components/modal";
+@import "components/slider";
+@import "components/accordion";
+
+/******************************** navs ******************************/
+@import "navs/main-menu";
+@import "navs/mobile-menu";
+
+/****************************** page styles ******************************/
+@import "pages/index-1";
+@import "pages/blog";
+
+

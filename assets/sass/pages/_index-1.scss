@@ -1,0 +1,114 @@
+.gp-hero-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    .btns-wraper {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+
+// .gp-counter section
+.gp-counter-section {
+    padding: 60px 0px;
+    background: var(--neutral-color--50);
+
+    .counter-wrapper {
+        .col-12 {
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 1px;
+                height: 184px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: var(--neutral-color-100);
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            &:nth-child(2) {
+                .gp-counter-box {
+                    .title {
+                        color: var(--secondary-color-500);
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .gp-counter-box {
+                    .title {
+                        color: var(--tertiary-color-500);
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .gp-counter-box {
+                    .title {
+                        color: var(--negative-color-500);
+                    }
+                }
+            }
+
+            @include screen-992 {
+                &:nth-child(2) {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            @include screen-576 {
+                &:nth-child(2) {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .gp-counter-box {}
+}
+
+// gp-about-section
+.gp-about-section {
+    overflow: hidden;
+
+    .contents-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .about-img {
+        width: 775px;
+        height: 763px;
+        flex-shrink: 0;
+        position: relative;
+
+        @include screen-1600 {
+            left: -90px;
+        }
+
+        @include screen-1440 {
+            // left: -90px;
+            width: 575px;
+            height: 573px;
+        }
+
+        @include screen-992 {
+            left: initial;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

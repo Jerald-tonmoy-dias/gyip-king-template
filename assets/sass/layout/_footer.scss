@@ -1,0 +1,133 @@
+.gw-footer-section {
+    // background-color: $bg-white-1;
+
+    .gw-single-fo-widget {
+        .title {
+            margin-bottom: 24px;
+
+            @include screen-576 {
+                text-align: center;
+            }
+        }
+
+        // menu
+        .foo-menu {
+            @include screen-576 {
+                text-align: center;
+            }
+
+            li {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                a {
+                   // color: $paragraph-color;
+                    font-family: var(--template-font);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%;
+                    transition: var(--transition);
+
+                    @include screen-1440 {
+                        font-size: 16px;
+                    }
+
+                    @include screen-1200 {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: var(--primary-color-500);
+                    }
+                }
+            }
+        }
+
+        // social wrapper
+        .social-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            @include screen-576 {
+                justify-content: center;
+            }
+
+            a {
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                    flex-shrink: 0;
+
+                    @include screen-992 {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    // copyright-area
+    .copyright-area {
+        margin-top: 60px;
+        // border-top: 1px solid $stroke-color;
+        padding: 30px 0px;
+
+        .copyright-txt {
+            @include screen-768 {
+                text-align: center;
+            }
+
+            a {
+                color: var(--primary-color-500);
+            }
+        }
+
+        .copyright-menu {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            @include screen-992 {
+                gap: 20px;
+            }
+
+            @include screen-768 {
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+
+            li {
+
+                a {
+                   // color: $paragraph-color;
+                    font-family: var(--template-font);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%;
+                    transition: var(--transition);
+
+                    @include screen-1440 {
+                        font-size: 16px;
+                    }
+
+                    @include screen-1200 {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: var(--primary-color-500);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius Wallet - HTML5 Template</title>
+  <!--Essential css files-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl-slider.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--favicon-->
+  <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="gw-header">
+    <div class="top-header">
+      <div class="container">
+        <div class="row gap-2 gap-md-0">
+          <div class="col-md-8">
+            <div class="left-side">
+              <a href="#">
+                <span class="header-top-text">
+                  <img class="header-top-icon" src="./assets/img/icons/phone.png" alt="phone icon">
+                  Call Us: +1 0123 456 789
+                </span>
+              </a>
+              <a href="#">
+                <span class="header-top-text">
+                  <img class="header-top-icon" src="./assets/img/icons/email.png" alt="email icon">
+                  Mail Us: info@geniuswallet.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="right-side">
+              <div class="social-wrapper">
+                <a href="#"><img src="./assets/img/icons/hf-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hx-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hi-icon.png" alt="icon"></a>
+                <a href="#"><img src="./assets/img/icons/hl-icon.png" alt="icon"></a>
+              </div>
+
+              <select>
+                <option value="en">English</option>
+                <option value="bn">Bangla</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4 col-lg-3">
+            <a href="index.html" class="logo">
+              <img class="logo" src="./assets/img/logo.png" alt="logo">
+            </a>
+          </div>
+          <!-- hide on mobile device -->
+          <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+            <nav class="main-menu">
+              <ul>
+                <li class="active">
+                  <a href="index.html">Home <i class="fa-solid fa-angle-down"></i> </a>
+                  <ul class="submenu">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about.html">About </a>
+                </li>
+                <li>
+                  <a href="#">API </a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us </a>
+                </li>
+                <li>
+                  <a href="#">Blog <i class="fa-solid fa-angle-down"></i> </a>
+                  <ul class="submenu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 col-lg-3">
+            <div class="auth-btns">
+              <a class="template-btn d-none d-md-inline-flex" href="#">Sign Up</a>
+              <a class="template-btn primary-btn d-none d-md-inline-flex" href="#">Log In</a>
+              <button type="button" class="d-lg-none ms-2  template-btn primary-btn moble-menu-trigger-btn"><i
+                  class="fa-solid fa-bars"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--mobile menu start-->
+  <div class="mobile-menu pp-mobile-menu-wrapper">
+    <div class="mobile-menu-header">
+      <a href="index.html"><img src="./assets/img/logo.png" alt="logo" class="mobile-logo"></a>
+      <button type="button" class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-menu">
+      <li class="has-submenu">
+        <a href="index.html">Home</a>
+
+      </li>
+
+
+      <li class="has-submenu">
+        <a href="javascript:void(0)">Pages</a>
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu-wrapper">
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li class="has-submenu">
+        <a href="javascript:void(0)">Blog</a>
+        <i class="fas fa-angle-down"></i>
+        <ul class="submenu-wrapper">
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog Details</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- need to work -->
+    <div class="d-flex d-md-none gap-2 mt-4">
+      <select>
+        <option value="en">En</option>
+        <option value="au">Au</option>
+        <option value="es">Es</option>
+      </select>
+      <select>
+        <option value="usd">USD</option>
+        <option value="inr">INR</option>
+        <option value="ngn">NGN</option>
+      </select>
+    </div>
+    <div class="d-flex gap-2 d-sm-none mt-4">
+      <a href="register.html" class="template-btn primary-outline-btn">
+        Sign Up
+      </a>
+      <a href="login.html" class="template-btn primary-btn">
+        Login Now
+      </a>
+    </div>
+  </div>
+  <!--mobile menu end-->
+
+  <!-- breadcrumb section -->
+  <div class="gw-breadcrumb-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="breadcrumb-title mb-16 wow fadeInUp">About Us</h2>
+          <ul class="breadcrumb-menu wow fadeInUp" data-wow-delay=".1s">
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a class="active" href="#">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- we are secure -->
+  <div class="gw-secure-section py-120">
+    <div class="container">
+      <div class="row gap-4 gap-lg-0">
+        <div class="col-12 col-lg-6 col-xl-5 wow fadeInUp">
+          <div class="left-side">
+            <img src="./assets/img/secure1.png" alt="img">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay=".2s">
+          <div class="right-side">
+            <p class="primary-txt-color fw-600 mb-4">We Are Secure</p>
+            <h2 class="mb-16">Securing Your Digital
+              Finances Bank Wallet Safety.</h2>
+            <p class="mb-40">
+              We are a Secure and Stable Platform, built with the highest standards of reliability and protection. Our
+              cutting-edge technology ensures that your data remains safe, while our robust infrastructure guarantees
+              seamless
+              performance even during peak times.
+            </p>
+
+            <div class="card-wrapper">
+              <div class="gw-single-secure-card active">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path
+                      d="M7.9481 14.7156C8.86325 12.3781 9.93958 10.107 11.1694 7.9187C10.3501 8.00961 9.54747 8.21374 8.78435 8.52526C5.56123 9.82698 3.59717 12.6503 4.39732 14.8332L7.9481 14.7156Z"
+                      fill="#FBF9FF" />
+                    <path
+                      d="M15.166 25.6026C17.348 26.4027 20.1723 24.4387 21.474 21.2155C21.7864 20.4524 21.9915 19.6496 22.0834 18.8301C19.895 20.0599 17.624 21.1362 15.2865 22.0513L15.166 25.6026Z"
+                      fill="#FBF9FF" />
+                    <path
+                      d="M9.88633 12.5391C9.40352 13.6266 8.94414 14.7328 8.51758 15.8109L14.1895 21.4781C15.2676 21.0562 16.3738 20.5969 17.4613 20.1094L9.88633 12.5391Z"
+                      fill="#FBF9FF" />
+                    <path
+                      d="M21.5625 7.96875H19.6875V8.90625H21.5625C21.6868 8.90625 21.806 8.85686 21.894 8.76896C21.9819 8.68105 22.0312 8.56182 22.0312 8.4375C22.0312 8.31318 21.9819 8.19395 21.894 8.10604C21.806 8.01814 21.6868 7.96875 21.5625 7.96875Z"
+                      fill="#FBF9FF" />
+                    <path
+                      d="M21.5625 9.84375H19.6875V10.7812H21.5625C21.6868 10.7812 21.806 10.7319 21.894 10.644C21.9819 10.556 22.0312 10.4368 22.0312 10.3125C22.0312 10.1882 21.9819 10.069 21.894 9.98104C21.806 9.89314 21.6868 9.84375 21.5625 9.84375Z"
+                      fill="#FBF9FF" />
+                    <path
+                      d="M28.0656 1.93355C28.0656 1.93355 19.6872 -0.353477 14.7344 4.5984C13.1406 6.19215 11.6261 8.81293 10.3047 11.6325L18.37 19.695C21.1881 18.374 23.8075 16.8604 25.4013 15.2667C30.3527 10.3125 28.0656 1.93355 28.0656 1.93355ZM20.6247 15C19.5122 15 18.4246 14.6701 17.4996 14.052C16.5746 13.4339 15.8536 12.5554 15.4279 11.5276C15.0021 10.4997 14.8907 9.36872 15.1078 8.27758C15.3248 7.18643 15.8605 6.18415 16.6472 5.39748C17.4339 4.61081 18.4362 4.07508 19.5273 3.85804C20.6184 3.641 21.7494 3.75239 22.7773 4.17814C23.8051 4.60388 24.6836 5.32485 25.3017 6.24988C25.9198 7.1749 26.2497 8.26244 26.2497 9.37496C26.2481 10.8663 25.6549 12.2961 24.6004 13.3507C23.5458 14.4052 22.116 14.9983 20.6247 15Z"
+                      fill="#FBF9FF" />
+                    <path
+                      d="M20.625 4.6875C19.6979 4.6875 18.7916 4.96242 18.0208 5.47749C17.2499 5.99256 16.6491 6.72464 16.2943 7.58117C15.9395 8.4377 15.8467 9.3802 16.0276 10.2895C16.2084 11.1988 16.6549 12.034 17.3104 12.6896C17.966 13.3451 18.8012 13.7916 19.7105 13.9724C20.6198 14.1533 21.5623 14.0605 22.4188 13.7057C23.2754 13.3509 24.0074 12.7501 24.5225 11.9792C25.0376 11.2084 25.3125 10.3021 25.3125 9.375C25.3111 8.13222 24.8168 6.94073 23.9381 6.06194C23.0593 5.18316 21.8678 4.68886 20.625 4.6875ZM22.9688 10.3125C22.9688 10.6855 22.8206 11.0431 22.5569 11.3069C22.2931 11.5706 21.9355 11.7188 21.5625 11.7188V12.6562H20.625V11.7188H19.6875V12.6562H18.75V11.7188H18.2813V10.7812H18.75V7.96875H18.2813V7.03125H18.75V6.09375H19.6875V7.03125H20.625V6.09375H21.5625V7.03125C21.8345 7.03005 22.1009 7.10808 22.3293 7.25583C22.5576 7.40357 22.738 7.61463 22.8484 7.86321C22.9588 8.11179 22.9943 8.38714 22.9508 8.65561C22.9072 8.92408 22.7864 9.17406 22.6031 9.375C22.8372 9.63125 22.9675 9.96544 22.9688 10.3125Z"
+                      fill="#FBF9FF" />
+                    <path
+                      d="M4.96406 26.1881L3.375 26.6249L3.81141 25.0359C3.85547 24.877 4.90219 21.1209 6.70453 19.3171C7.08746 18.923 7.5198 18.5802 7.99078 18.2971C6.90938 18.3965 5.68734 19.0082 4.38937 20.3062C1.82813 22.8702 1.40625 28.5937 1.40625 28.5937C1.40625 28.5937 7.12969 28.1718 9.69281 25.6106C10.9884 24.3145 11.6006 23.0938 11.7019 22.0143C11.4183 22.4838 11.0755 22.9148 10.6819 23.2968C8.87953 25.0977 5.12297 26.144 4.96406 26.1881Z"
+                      fill="#FBF9FF" />
+                    <path
+                      d="M10.0193 22.6328C11.6669 20.9851 11.3449 19.981 10.6821 19.3182C10.0193 18.6554 9.0152 18.3338 7.36754 19.981C5.71988 21.6282 4.71582 25.2845 4.71582 25.2845C4.71582 25.2845 8.3716 24.2813 10.0193 22.6328Z"
+                      fill="#FBF9FF" />
+                  </svg>
+                </div>
+                <h5 class="title">Fastest And Cheaper</h5>
+                <p class="des">Our edge technology ensures that are
+                  your data remains safe, while our robust
+                  seamless working</p>
+              </div>
+              <div class="gw-single-secure-card">
+                <div class="icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <g clip-path="url(#clip0_263_657)">
+                      <path
+                        d="M15.3234 14.2639H11.9963V18.1028H15.3234C16.3788 18.0964 17.2312 17.239 17.2312 16.1834C17.2312 15.128 16.3788 14.2706 15.3234 14.2642V14.2639Z"
+                        fill="#31211A" />
+                      <path
+                        d="M17.1254 18.913C19.21 17.9922 21.1845 16.8399 23.0117 15.4781C23.1635 15.3641 23.3723 15.3641 23.5241 15.4781C23.7226 15.6271 23.9241 15.7736 24.1282 15.9179C24.2822 15.2226 24.3601 14.5125 24.3601 13.8003C24.3601 8.42946 19.9904 4.05981 14.6196 4.05981C9.24855 4.05981 4.87891 8.42946 4.87891 13.8003C4.87891 19.1713 9.24827 23.541 14.6193 23.541C15.2538 23.5407 15.8866 23.4793 16.5093 23.3569C16.5074 23.2902 16.5063 23.2232 16.5063 23.1559V19.8686C16.506 19.4557 16.7487 19.0815 17.1254 18.913ZM15.9536 18.8833V20.078C15.9536 20.3137 15.7626 20.505 15.5265 20.505C15.2908 20.505 15.0995 20.3137 15.0995 20.078V18.9567H13.7325V20.078C13.7325 20.3137 13.5412 20.505 13.3054 20.505C13.0694 20.505 12.8784 20.3137 12.8784 20.078V18.9567H11.5692C11.3331 18.9567 11.1421 18.7654 11.1421 18.5297V9.14397C11.1421 8.90821 11.3331 8.71693 11.5692 8.71693H12.8784V7.52284C12.8784 7.28707 13.0694 7.0958 13.3054 7.0958C13.5412 7.0958 13.7325 7.28707 13.7325 7.52284V8.71693H15.0995V7.52284C15.0995 7.28707 15.2908 7.0958 15.5265 7.0958C15.7626 7.0958 15.9536 7.28707 15.9536 7.52284V8.79005C17.0434 9.04388 17.8736 9.92799 18.0585 11.0317C18.2433 12.1352 17.7468 13.2417 16.7993 13.8367C17.7468 14.4319 18.2433 15.5384 18.0585 16.6419C17.8736 17.7454 17.0434 18.6295 15.9536 18.8833Z"
+                        fill="#31211A" />
+                      <path
+                        d="M17.2426 11.4907C17.2412 10.4312 16.3827 9.57268 15.3231 9.57129H11.9963V13.4099H15.3234C16.3827 13.4085 17.2412 12.55 17.2426 11.4907Z"
+                        fill="#31211A" />
+                      <path
+                        d="M14.6197 24.3952C8.77794 24.3952 4.02519 19.6424 4.02519 13.8004C4.02519 7.95861 8.77794 3.20585 14.6197 3.20585C20.4617 3.20585 25.2142 7.95861 25.2142 13.8004C25.2145 14.6895 25.103 15.575 24.8825 16.4363C25.8042 17.0463 26.7581 17.6054 27.7403 18.1114C28.1521 16.8561 28.3809 15.548 28.4198 14.2274H27.3753C27.1395 14.2274 26.9482 14.0364 26.9482 13.8004C26.9482 13.5646 27.1395 13.3733 27.3753 13.3733H28.4201C28.318 10.0085 26.9858 6.79732 24.6754 4.34879L23.9412 5.08277C23.8336 5.19203 23.6757 5.2354 23.5275 5.19592C23.3793 5.15672 23.2634 5.04079 23.2242 4.8926C23.1847 4.74442 23.228 4.5865 23.3373 4.47891L24.0713 3.74466C21.6228 1.43431 18.4116 0.102033 15.0467 0V1.0448C15.0467 1.28056 14.8555 1.47184 14.6197 1.47184C14.3837 1.47184 14.1927 1.28056 14.1927 1.0448V0C10.8275 0.102033 7.61638 1.43431 5.16785 3.74493L5.90182 4.47891C6.01109 4.5865 6.05446 4.74442 6.01498 4.8926C5.97578 5.04106 5.85984 5.15672 5.71166 5.19592C5.56347 5.2354 5.40556 5.19203 5.29796 5.08277L4.56399 4.34879C2.25364 6.7976 0.921369 10.0085 0.819336 13.3736H1.86386C2.0999 13.3736 2.2909 13.5646 2.2909 13.8006C2.2909 14.0364 2.0999 14.2277 1.86386 14.2277H0.819336C0.921369 17.5926 2.25364 20.8037 4.56399 23.2522L5.29796 22.5183C5.46533 22.3539 5.73362 22.3548 5.8996 22.5208C6.0653 22.6865 6.06641 22.955 5.9021 23.1221L5.16785 23.8564C7.61665 26.1667 10.8275 27.499 14.1927 27.601V26.5562C14.1927 26.3202 14.3839 26.1292 14.6197 26.1292C14.8557 26.1292 15.0467 26.3202 15.0467 26.5562V27.6007C15.9806 27.5727 16.9089 27.4501 17.8181 27.2346C17.1708 26.3402 16.748 25.3037 16.5842 24.212C15.9364 24.3334 15.2789 24.3949 14.6197 24.3952Z"
+                        fill="#31211A" />
+                      <path
+                        d="M29.0628 19.6936C28.6383 19.5049 28.2199 19.308 27.8073 19.1029C27.8034 19.1012 27.7995 19.099 27.7956 19.0973C26.5387 18.4742 25.3251 17.7675 24.163 16.9818C24.1558 16.9774 24.1494 16.9729 24.143 16.9682C23.8466 16.7669 23.5547 16.5615 23.2675 16.3516C21.4604 17.6691 19.5178 18.7895 17.4724 19.6936C17.4038 19.7251 17.3598 19.7937 17.3601 19.8691V23.1561C17.3601 24.6619 17.8567 26.0044 18.8389 27.1666C18.8611 27.1877 18.8809 27.211 18.8984 27.2363C18.9521 27.2983 19.0071 27.3598 19.0638 27.4204V27.3984C19.0638 27.1627 19.2551 26.9714 19.4909 26.9714C19.7266 26.9714 19.9179 27.1627 19.9179 27.3984V27.7857C19.9179 27.9058 19.8673 28.0204 19.7783 28.101C19.9429 28.2403 20.1161 28.3762 20.2977 28.5091C21.1737 29.1436 22.1382 29.6459 23.1599 30.0001C24.225 29.6437 25.2331 29.1355 26.1531 28.4913C26.3507 28.3509 26.5384 28.2069 26.7166 28.0593C26.6524 27.9825 26.6174 27.8858 26.6174 27.7857V27.3981C26.6174 27.1704 26.7958 26.9828 27.023 26.9714C27.2504 26.96 27.4467 27.129 27.4695 27.3553C28.6024 26.1498 29.1751 24.7428 29.1751 23.1556V19.8688C29.1754 19.7935 29.1315 19.7248 29.0628 19.6936ZM21.1768 27.786C21.1768 28.0217 20.9855 28.213 20.7497 28.213C20.514 28.213 20.3227 28.0217 20.3227 27.786V27.3981C20.3227 27.1621 20.514 26.9711 20.7497 26.9711C20.9855 26.9711 21.1768 27.1621 21.1768 27.3981V27.786ZM22.4356 27.786C22.4356 28.0217 22.2444 28.213 22.0086 28.213C21.7728 28.213 21.5816 28.0217 21.5816 27.786V27.3981C21.5816 27.1621 21.7728 26.9711 22.0086 26.9711C22.2444 26.9711 22.4356 27.1621 22.4356 27.3981V27.786ZM22.422 24.6972L20.9877 23.2629C20.8785 23.1553 20.8354 22.9974 20.8746 22.8492C20.9138 22.7007 21.0297 22.5851 21.1779 22.5456C21.3261 22.5064 21.4843 22.5497 21.5919 22.659L22.724 23.7911L24.9434 21.5711C25.051 21.4619 25.2089 21.4185 25.3574 21.4577C25.5055 21.4972 25.6212 21.6128 25.6607 21.7613C25.6999 21.9095 25.6568 22.0674 25.5473 22.175L23.0259 24.6963C22.8594 24.8632 22.5888 24.8632 22.422 24.6963V24.6972ZM23.6945 27.786C23.6945 28.0217 23.5032 28.213 23.2675 28.213C23.0317 28.213 22.8404 28.0217 22.8404 27.786V27.3981C22.8404 27.1621 23.0317 26.9711 23.2675 26.9711C23.5032 26.9711 23.6945 27.1621 23.6945 27.3981V27.786ZM24.9534 27.786C24.9534 28.0217 24.7624 28.213 24.5264 28.213C24.2906 28.213 24.0993 28.0217 24.0993 27.786V27.3981C24.0993 27.1621 24.2906 26.9711 24.5264 26.9711C24.7624 26.9711 24.9534 27.1621 24.9534 27.3981V27.786ZM26.2123 27.786C26.2123 28.0217 26.0213 28.213 25.7852 28.213C25.5495 28.213 25.3582 28.0217 25.3582 27.786V27.3981C25.3582 27.1621 25.5495 26.9711 25.7852 26.9711C26.0213 26.9711 26.2123 27.1621 26.2123 27.3981V27.786Z"
+                        fill="#31211A" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_263_657">
+                        <rect width="30" height="30" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h5 class="title">Trusted & Secure</h5>
+                <p class="des">Our edge technology ensures that are
+                  your data remains safe, while our robust
+                  seamless working</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main about contents here start -->
+  <div class="gw-who-we-are-section pb-120">
+    <div class="container">
+      <div class="row justify-content-center mb-40 wow fadeInUp">
+        <div class="col-md-6 text-center">
+          <p class="primary-txt-color fw-600 mb-4">Who We Are</p>
+          <h2 class="mb-16">Journey Behind You.</h2>
+          <p class="">
+            We are a Secure and Stable Platform, built with the
+            highest of standards reliability and Our cutting-edge.
+          </p>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md-6 wow fadeInUp" data-wow-delay=".1s">
+          <img src="./assets/img/g1.png" alt="gallery-img">
+        </div>
+        <div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
+          <img src="./assets/img/g2.png" alt="gallery-img">
+        </div>
+        <div class="col-md-4 wow fadeInUp" data-wow-delay=".3s">
+          <img src="./assets/img/g3.png" alt="gallery-img">
+        </div>
+        <div class="col-md-4 wow fadeInUp" data-wow-delay=".4s">
+          <img src="./assets/img/g4.png" alt="gallery-img">
+        </div>
+        <div class="col-md-4 wow fadeInUp" data-wow-delay=".5s">
+          <img src="./assets/img/g5.png" alt="gallery-img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main about contents here end -->
+
+  <!-- statistics section -->
+  <div class="gw-statistics-section pb-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="left-side">
+            <p class="primary-txt-color fw-600 mb-4 wow fadeInUp">Our Statistics</p>
+            <h2 class="mb-16 wow fadeInUp">Securing Your Digital
+              Finances Bank Wallet Safety.</h2>
+            <p class="mb-40 wow fadeInUp">
+              We are a Secure and Stable Platform, built with the highest standards of reliability and protection. Our
+              cutting-edge technology ensures that your data
+            </p>
+            <div class="counter-wrapper wow fadeInUp">
+              <div class="gw-single-counter">
+                <div class="icon-wrapper">
+                  <img class="icon" src="./assets/img/icons/counter-icon1.png" alt="counter icon">
+
+                </div>
+                <h4 class="title"><span class="counter">890</span>M</h4>
+                <p class="des">Happy Clients</p>
+              </div>
+              <div class="gw-single-counter">
+                <div class="icon-wrapper">
+                  <img class="icon" src="./assets/img/icons/counter-icon2.png" alt="counter icon">
+
+                </div>
+                <h4 class="title"><span class="counter">96</span>M</h4>
+                <p class="des">Total Transaction</p>
+              </div>
+              <div class="gw-single-counter">
+                <div class="icon-wrapper">
+                  <img class="icon" src="./assets/img/icons/counter-icon3.png" alt="counter icon">
+
+                </div>
+                <h4 class="title"><span class="counter">90</span>M</h4>
+                <p class="des">Total Deposit</p>
+              </div>
+              <div class="gw-single-counter">
+                <div class="icon-wrapper">
+                  <img class="icon" src="./assets/img/icons/counter-icon4.png" alt="counter icon">
+
+                </div>
+                <h4 class="title"><span class="counter">890</span>M</h4>
+                <p class="des">Total Withdraw</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="right-side wow fadeInUp" data-wow-delay=".2s">
+            <img class="counter-img" src="./assets/img/statistics-img.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sponser section -->
+  <div class="container overflow-hidden wow fadeInUp">
+    <div class="gw-sponser-section py-120">
+      <div class="row mb-40 justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="primary-txt-color fw-600 mb-4">Sponsors</p>
+          <h2 class="mb-16">Our Sponsors The Driving
+            Force Behind Genius Wallet</h2>
+          <p class="">
+            Make Online Banking Easier Comfortable by prioritizing simplicity
+            speed With intuitive interfaces and mobile managing your finances.
+          </p>
+        </div>
+      </div>
+
+      <!-- gw-sponser slider -->
+      <div class="scrolling-wrap mb-24">
+        <div class="gw-sponser-wrapper left-scroll">
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+        </div>
+        <div class="gw-sponser-wrapper left-scroll">
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+        </div>
+      </div>
+
+      <!-- gw-sponser slider -->
+      <div class="scrolling-wrap mb-24">
+        <div class="gw-sponser-wrapper right-scroll">
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+        </div>
+        <div class="gw-sponser-wrapper right-scroll">
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+          <div class="gw-single-sponser">
+            <img src="./assets/img/sponser-logo1.png" alt="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section  -->
+  <footer class="gw-footer-section pt-120">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Menu</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Get Started</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Register as User</a></li>
+              <li><a href="#">Login as User</a></li>
+              <li><a href="#">Register as Merchant</a></li>
+              <li><a href="#">Login as Merchant</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Pages</h4>
+            <ul class="foo-menu">
+              <li><a href="#">Frequently Asked Question</a></li>
+              <li><a href="#">Announcement</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="gw-single-fo-widget">
+            <h4 class="title">Social Link</h4>
+            <div class="social-wrapper">
+              <a href="#"><img class="icon" src="./assets/img/icons/linkedin.png" alt="icon"></a>
+              <a href="#"><img class="icon" src="./assets/img/icons/communication.png" alt="icon"></a>
+              <a href="#"><img class="icon" src="./assets/img/icons/twitter.png" alt="icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright-area">
+        <div class="row gy-2 gy-sm-0 justify-content-center justify-content-lg-end">
+          <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
+            <p class="copyright-txt">© All Right Reserved by <a href="#">Genius Admin</a></p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+            <ul class="copyright-menu">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms And Condition</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scroll to top -->
+  <button type="button" class="scroll-top-btn">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
+
+  <!--Esential Js Files-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-slider.js"></script>
+  <script src="assets/js/nice-select.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
