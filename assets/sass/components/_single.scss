@@ -60,6 +60,7 @@
     .title {
         color: var(--neutral-color-950);
     }
+
     .des {
         color: var(--neutral-color-800);
     }
@@ -149,4 +150,128 @@
 }
 
 
-// 
+// gp-single-price
+.gp-single-price {
+    padding: 80px 32px 32px 32px;
+    border-radius: 16px;
+    border: 1px solid var(--neutral-100, #E6E7E8);
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+
+    .most-popular {
+        display: flex;
+        transform: rotate(41.3deg);
+        padding: var(--spacing-sm, 6px) 48px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        right: -36.713px;
+        top: 30px;
+        border: 1px solid var(--base-white, #FFF);
+        background: var(--base-white, #FFF);
+        text-align: center;
+    }
+
+    .pricing-badge {
+        display: flex;
+        padding: var(--spacing-sm, 6px) 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 16px 0px;
+        background: var(--primary-500, #007BFF);
+        color: var(--base-white, #FFF);
+        text-align: center;
+        font-family: var(--template-font);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+
+    }
+
+    .title {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    .subtitle {
+        color: var(--neutral-700, #404953);
+        font-family: var(--template-font);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+
+    }
+
+    .divider {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-3xl, 24px);
+        align-self: stretch;
+        border-top:1px solid  var(--neutral-color-200, #D4D6D8);
+    }
+
+    ul {
+        display: flex;
+        width: 360px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xl, 16px);
+        margin-bottom: 40px;
+
+        li {
+            color: var(--neutral-color-800, #333D48);
+            font-family: var(--template-font);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+       
+        }
+    }
+
+    &.active {
+        background-color: var(--primary-color-500);
+
+        .divider {
+            border-top: 1px solid  var(--neutral-color-200, #D4D6D8);
+        }
+
+        .title,
+        .subtitle,
+        ul li {
+            svg {
+                fill: var(--white-color);
+
+                path {
+                    &:first-child {
+                        fill: var(--white-color);
+                    }
+
+                    &:last-child {
+                        fill: var(--dark-color);
+                    }
+                }
+            }
+
+            color: var(--white-color);
+        }
+
+        .pricing-badge {
+            background-color: var(--white-color);
+            color: var(--dark-color);
+        }
+    }
+}

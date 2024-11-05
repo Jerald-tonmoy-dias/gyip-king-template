@@ -26,7 +26,7 @@
     color: var(--white-color);
 }
 
-.outline-primary-btn {
+.primary-outline-btn {
     @extend .template-btn;
     background: var(--white-color);
     color: var(--primary-color-500);
@@ -36,11 +36,14 @@
 // secondary btn
 .secondary-outline-btn {
     @extend .template-btn;
-    padding: 12px 24px;
-    border-radius: 42px;
     border: 1px solid var(--secondary-color-500);
     color: var(--neutral-color-950);
-    line-height: 130%;
+
+    &.md {
+        padding: 12px 24px;
+        border-radius: 42px;
+        line-height: 130%;
+    }
 }
 
 // dark btn
