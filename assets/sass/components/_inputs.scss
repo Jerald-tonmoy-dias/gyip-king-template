@@ -1,8 +1,9 @@
 .common-frontend-form {
-    padding: 60px 60px;
-    border-radius: 20px;
-    // border: 1px solid $stroke-color;
-    // background: $bg-white-2;
+    padding: 60px;
+    border-radius: 24px;
+    border-radius: 24px;
+    border: 1px solid var(--primary-color-500, #007BFF);
+    background: rgba(229, 242, 255, 0.50);
 
     @include screen-1200 {
         padding: 30px;
@@ -47,12 +48,12 @@
 
 .gw-input-wrapper {
     .gw-label {
-        // color: $neutral-color;
+        color: var(--neutral-color-900);
         font-family: var(--template-font);
-        font-size: 18px;
+        font-size: 14px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
+        font-weight: 500;
+        line-height: 120%;
 
         @include screen-1440 {
             font-size: 16px;
@@ -85,15 +86,19 @@
         padding: 12px 12px;
         align-items: center;
         border-radius: 10px;
-        // border: 1px solid $stroke-color;
-        // background: $bg-white;
-        // color: $neutral-color;
+        border: 1px solid var(--neutral-color-100);
+        background: var(--white-color);
+        color: var(--neutral-color-800);
         font-family: var(--template-font);
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 160%;
+        line-height: 170%;
         &:focus-visible {
+            outline: none;
+        }
+        &:disabled {
+            background-color: var(--primary-color-100);
             outline: none;
         }
 

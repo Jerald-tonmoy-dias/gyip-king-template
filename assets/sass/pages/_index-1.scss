@@ -100,7 +100,6 @@
         }
 
         @include screen-1440 {
-            // left: -90px;
             width: 575px;
             height: 573px;
         }
@@ -110,5 +109,40 @@
             width: 100%;
             height: auto;
         }
+    }
+}
+
+// gp-calculator-section
+.gp-calculator-section {
+    .profit-cal-img {
+        width: 772.004px;
+        height: 808.243px;
+        flex-shrink: 0;
+        position: relative;
+        left: -180px;
+   
+        @include screen-1920 {
+            left: -40px;
+            width: 575px;
+            height: 573px;
+        }
+
+        @include screen-1440 {
+            left: -10px;
+            width: 555px;
+            height: 553px;
+        }
+        @include screen-1200 {
+            left: initial;
+        width: 100%;
+        height: initial;
+        }
+
+        @include screen-992 {
+            left: initial;
+            width: 100%;
+            height: auto;
+        }
+        
     }
 }

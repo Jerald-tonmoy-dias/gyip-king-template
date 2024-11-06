@@ -179,9 +179,9 @@
   <div class="gp-hero-section" data-background="./assets/img/hero-bg.png">
     <div class="container">
       <div class="row justify-content-center  mb-60">
-        <div class="col-lg-8 text-center">
-          <p class="secondary-outline-btn fz-20 mb-14">High-Yield Investments</p>
-          <h2 class="mb-32">Grow Your Wealth with Secure High-Yield Investments</h2>
+        <div class="col-lg-10 gp-common-title text-center">
+          <p class="outline-btn-txt lg fz-20 mb-14">High-Yield Investments</p>
+          <h1 class="mb-32">Grow Your Wealth with Secure High-Yield Investments</h1>
           <p class="mb-48">
             Whether you're new to investing or looking to expand your portfolio, you can start today with as little as
             $50 and experience the benefits of smart, high-yield investments.
@@ -269,12 +269,15 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
-          <p class="secondary-outline-btn fz-20 mb-14">About Us</p>
-          <h2 class="mb-32">Who We Are: Empowering Your Financial Growth</h2>
-          <p class="mb-48">
-            At GHYIP, our mission is to provide secure, high-yield investment opportunities that empower individuals and
-            businesses to achieve their financial goals.
-          </p>
+          <div class="gp-common-title">
+            <p class="outline-btn-txt fz-20 mb-14">About Us</p>
+            <h2 class="mb-32">Who We Are: Empowering Your Financial Growth</h2>
+            <p class="mb-48">
+              At GHYIP, our mission is to provide secure, high-yield investment opportunities that empower individuals
+              and
+              businesses to achieve their financial goals.
+            </p>
+          </div>
 
           <div class="contents-wrapper">
             <div class="single-about-info">
@@ -320,13 +323,13 @@
   <div class="gp-pricing-section">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <p class="secondary-outline-btn fz-20 mb-14">Invest Offer</p>
+        <div class="col-lg-8 text-center gp-common-title">
+          <p class="outline-btn-txt fz-20 mb-14">Invest Offer</p>
           <h2 class="mb-32">Choose the Right Plan to Maximize Your Returns</h2>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mb-60">
         <div class="col-lg-4">
           <div class="gp-single-price">
             <span class="pricing-badge">Orbit</span>
@@ -491,8 +494,101 @@
           </div>
         </div>
       </div>
+
+      <div class="d-flex justify-content-center">
+        <a class="template-btn primary-btn" href="#">See All Investment Plans</a>
+      </div>
     </div>
   </div>
+
+  <!-- gp profile calculator -->
+  <div class="gp-calculator-section py-120">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <img class="profit-cal-img" src="./assets/img/profile-cal-img.png" alt="profile-img">
+        </div>
+        <div class="col-lg-6">
+          <div class="gp-common-title">
+            <p class="outline-btn-txt fz-20 mb-14">Profit Calculator</p>
+            <h2 class="mb-24">Estimate Your Earnings with Our Profit Calculator</h2>
+            <p class="mb-48">
+              Get a quick overview of your potential returns by entering your investment details.
+            </p>
+          </div>
+          <div class="common-frontend-form">
+            <!-- form -->
+            <div class="row">
+              <div class="col-12 mb-32">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-33" class="gw-label mb-8">Select Plan<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <select id="gw-input-33" class="gw-input w-100">
+                    <option value="bn">Plan 1</option>
+                    <option value="us">Plan 2</option>
+                    <option value="aus">Plan 3</option>
+                  </select>
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 mb-32">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-2" class="gw-label mb-8">Enter Amount<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <!--  add .error on error -->
+                  <input type="number" class="gw-input" id="gw-input-2" placeholder="Type amount here">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12 mb-32">
+                <div class="gw-input-wrapper">
+                  <label for="gw-input-5" class="gw-label mb-8">Profit Amount<span
+                      class="hint-txt d-none">(hint)</span></label>
+                  <!--  add .error on error -->
+                  <input disabled type="text" value="$10.50" class="gw-input" id="gw-input-5"
+                    placeholder="Profit Amount">
+                  <!-- error & hint msg -->
+                  <span class="error-msg d-none">This is an error message</span>
+                  <span class="hint-msg d-none">This is a hint text to help user</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="button" class="template-btn primary-btn w-100">Calculate Now </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- faq section -->
   <div class="gw-faq-section pb-120 d-none">

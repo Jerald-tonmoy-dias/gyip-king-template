@@ -798,8 +798,11 @@ p {
   color: var(--white-color); }
 
 .common-frontend-form {
-  padding: 60px 60px;
-  border-radius: 20px; }
+  padding: 60px;
+  border-radius: 24px;
+  border-radius: 24px;
+  border: 1px solid var(--primary-color-500, #007BFF);
+  background: rgba(229, 242, 255, 0.5); }
   @media (max-width: 1199.97px) {
     .common-frontend-form {
       padding: 30px; } }
@@ -840,11 +843,12 @@ p {
           height: 20px; } }
 
 .gw-input-wrapper .gw-label {
+  color: var(--neutral-color-900);
   font-family: var(--template-font);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 160%; }
+  font-weight: 500;
+  line-height: 120%; }
   @media (max-width: 1439.97px) {
     .gw-input-wrapper .gw-label {
       font-size: 16px; } }
@@ -873,14 +877,20 @@ p {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 10px;
+  border: 1px solid var(--neutral-color-100);
+  background: var(--white-color);
+  color: var(--neutral-color-800);
   font-family: var(--template-font);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 170%;
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */ }
   .gw-input-wrapper .gw-input:focus-visible {
+    outline: none; }
+  .gw-input-wrapper .gw-input:disabled {
+    background-color: var(--primary-color-100);
     outline: none; }
   @media (max-width: 1439.97px) {
     .gw-input-wrapper .gw-input {
@@ -902,6 +912,33 @@ p {
   .gw-input-wrapper .gw-input .inner-number {
     width: 100%;
     border: none; }
+
+.gp-common-title .outline-btn-txt {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 24px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 42px;
+  border: 1px solid var(--secondary-color-500, #27AE60);
+  background: #FFF;
+  color: var(--neutral-color-950);
+  text-align: center;
+  font-family: var(--template-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; }
+  .gp-common-title .outline-btn-txt.lg {
+    padding: 12px 24px;
+    font-size: 20px;
+    line-height: 130%; }
 
 .gp-counter-box {
   text-align: center; }
@@ -1063,7 +1100,7 @@ p {
     gap: 10px;
     position: absolute;
     right: -36.713px;
-    top: 30px;
+    top: 38px;
     border: 1px solid var(--base-white, #FFF);
     background: var(--base-white, #FFF);
     text-align: center; }
@@ -1462,6 +1499,34 @@ p {
         left: initial;
         width: 100%;
         height: auto; } }
+
+.gp-calculator-section .profit-cal-img {
+  width: 772.004px;
+  height: 808.243px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  left: -180px; }
+  @media (max-width: 1919.97px) {
+    .gp-calculator-section .profit-cal-img {
+      left: -40px;
+      width: 575px;
+      height: 573px; } }
+  @media (max-width: 1439.97px) {
+    .gp-calculator-section .profit-cal-img {
+      left: -10px;
+      width: 555px;
+      height: 553px; } }
+  @media (max-width: 1199.97px) {
+    .gp-calculator-section .profit-cal-img {
+      left: initial;
+      width: 100%;
+      height: initial; } }
+  @media (max-width: 991.97px) {
+    .gp-calculator-section .profit-cal-img {
+      left: initial;
+      width: 100%;
+      height: auto; } }
 
 .blog-main-wrapper {
   padding: 120px 0px; }
