@@ -290,6 +290,12 @@ p {
     .mb-30 {
       margin-bottom: 20px; } }
 
+.mb-80 {
+  margin-bottom: 80px; }
+  @media (max-width: 767.97px) {
+    .mb-80 {
+      margin-bottom: 40px; } }
+
 .mt-6 {
   margin-top: 6px; }
 
@@ -927,7 +933,7 @@ p {
   gap: 10px;
   border-radius: 42px;
   border: 1px solid var(--secondary-color-500, #27AE60);
-  background: #FFF;
+  background: var(--white-color);
   color: var(--neutral-color-950);
   text-align: center;
   font-family: var(--template-font);
@@ -1205,6 +1211,132 @@ p {
     .gp-single-price.active .pricing-badge {
       background-color: var(--white-color);
       color: var(--dark-color); }
+
+.single-step-info {
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--primary-color-600);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .single-step-info .icon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    padding: var(--spacing-2xl, 20px);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: var(--primary-500, #007BFF); }
+    .single-step-info .icon-wrapper .icon {
+      width: 40px;
+      height: 40px;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -o-object-fit: contain;
+      object-fit: contain; }
+  .single-step-info .title,
+  .single-step-info .des {
+    color: var(--white-color);
+    text-align: center; }
+
+.single-investor-card, .single-team-card {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--neutral-color-100);
+  background: var(--white-color);
+  overflow: hidden; }
+  .single-investor-card .title, .single-team-card .title {
+    margin-bottom: 12px;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition); }
+  .single-investor-card .subtitle, .single-team-card .subtitle {
+    margin-bottom: 24px;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition); }
+  .single-investor-card .thumb, .single-team-card .thumb {
+    border-radius: 16px; }
+  .single-investor-card .img-wrapper, .single-team-card .img-wrapper {
+    position: relative;
+    overflow: hidden; }
+    .single-investor-card .img-wrapper .social-wrapper, .single-team-card .img-wrapper .social-wrapper {
+      padding: 12px;
+      border-radius: 40px 40px 0px 0px;
+      background-color: var(--primary-color-500);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: absolute;
+      right: 16px;
+      bottom: -50%;
+      gap: 12px;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: var(--transition);
+      -o-transition: var(--transition);
+      transition: var(--transition); }
+      .single-investor-card .img-wrapper .social-wrapper a img, .single-team-card .img-wrapper .social-wrapper a img {
+        width: 24px;
+        height: 24px; }
+  .single-investor-card:hover .title, .single-team-card:hover .title,
+  .single-investor-card:hover .subtitle,
+  .single-team-card:hover .subtitle {
+    color: var(--primary-color-500); }
+  .single-investor-card:hover .img-wrapper .social-wrapper, .single-team-card:hover .img-wrapper .social-wrapper {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0; }
+
+.single-team-card {
+  padding-bottom: 24px; }
+  .single-team-card .subtitle {
+    margin-bottom: 0px; }
+
+.gp-single-testimonial {
+  padding: 40px 32px;
+  border-radius: 12px;
+  background: var(--white-color); }
+  .gp-single-testimonial .top-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px; }
+    .gp-single-testimonial .top-area .img-wrapper {
+      width: 48px;
+      height: 48px;
+      border-radius: 100px; }
+      .gp-single-testimonial .top-area .img-wrapper img {
+        width: 100%;
+        -o-object-fit: contain;
+        object-fit: contain; }
+    .gp-single-testimonial .top-area .name {
+      margin-bottom: 4px; }
+  .gp-single-testimonial .ratings-wrapper {
+    margin-bottom: 16px; }
+    .gp-single-testimonial .ratings-wrapper i {
+      color: #FAC03C; }
+  .gp-single-testimonial .des {
+    font-size: 16px; }
+  .gp-single-testimonial .readmore {
+    color: var(--primary-color-500); }
 
 /* Basic style for the dots */
 .owl-dots {
@@ -1500,6 +1632,9 @@ p {
         width: 100%;
         height: auto; } }
 
+.gp-pricing-section {
+  background: var(--neutral-color-50, #F7F8F8); }
+
 .gp-calculator-section .profit-cal-img {
   width: 772.004px;
   height: 808.243px;
@@ -1527,6 +1662,11 @@ p {
       left: initial;
       width: 100%;
       height: auto; } }
+
+.gp-step-section {
+  background: var(--primary-color-900); }
+  .gp-step-section .step-title {
+    color: #517BA7; }
 
 .blog-main-wrapper {
   padding: 120px 0px; }

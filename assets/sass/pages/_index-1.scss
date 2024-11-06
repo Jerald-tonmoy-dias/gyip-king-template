@@ -112,6 +112,11 @@
     }
 }
 
+// gp-pricing-section
+.gp-pricing-section {
+    background: var(--neutral-color-50, #F7F8F8);
+}
+
 // gp-calculator-section
 .gp-calculator-section {
     .profit-cal-img {
@@ -144,5 +149,14 @@
             height: auto;
         }
         
+    }
+}
+
+// gp-step-section
+.gp-step-section {
+    background: var(--primary-color-900);
+
+    .step-title {
+        color: #517BA7;
     }
 }

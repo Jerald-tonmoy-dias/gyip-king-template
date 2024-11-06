@@ -8,7 +8,7 @@
         gap: 10px;
         border-radius: 42px;
         border: 1px solid var(--secondary-color-500, #27AE60);
-        background: #FFF;
+        background: var(--white-color);
         color: var(--neutral-color-950);
         text-align: center;
         font-family: var(--template-font);
@@ -300,5 +300,161 @@
             background-color: var(--white-color);
             color: var(--dark-color);
         }
+    }
+}
+
+// .single-step-info
+.single-step-info {
+    padding: 24px;
+    border-radius: 16px;
+    background: var(--primary-color-600);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon-wrapper {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        padding: var(--spacing-2xl, 20px);
+        align-items: center;
+        gap: 10px;
+        border-radius: 40px;
+        background: var(--primary-500, #007BFF);
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+    }
+
+    .title,
+    .des {
+        color: var(--white-color);
+        text-align: center;
+    }
+}
+
+
+// single-investor-card
+.single-investor-card {
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--neutral-color-100);
+    background: var(--white-color);
+    overflow: hidden;
+
+    .title {
+        margin-bottom: 12px;
+        transition: var(--transition);
+    }
+
+    .subtitle {
+        margin-bottom: 24px;
+        transition: var(--transition);
+    }
+
+    .thumb {
+        border-radius: 16px;
+    }
+
+    .img-wrapper {
+        position: relative;
+        overflow: hidden;
+
+        .social-wrapper {
+            padding: 12px;
+            border-radius: 40px 40px 0px 0px;
+            background-color: var(--primary-color-500);
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 16px;
+            bottom: -50%;
+            gap: 12px;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+
+            a {
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+        }
+    }
+
+    &:hover {
+
+        .title,
+        .subtitle {
+            color: var(--primary-color-500);
+        }
+
+        .img-wrapper {
+            .social-wrapper {
+                opacity: 1;
+                visibility: visible;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+// single-team-card
+.single-team-card {
+    @extend .single-investor-card;
+
+    .subtitle {
+        margin-bottom: 0px;
+    }
+
+    padding-bottom: 24px;
+}
+
+// gp-single-testimonial
+.gp-single-testimonial {
+    padding: 40px 32px;
+    border-radius: 12px;
+    background: var(--white-color);
+
+    .top-area {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 16px;
+
+        .img-wrapper {
+            width: 48px;
+            height: 48px;
+            border-radius: 100px;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .name {
+            margin-bottom: 4px;
+        }
+    }
+
+    .ratings-wrapper {
+        margin-bottom: 16px;
+        i {
+            color: #FAC03C;
+        }
+    }
+
+    .des {
+        font-size: 16px;
+    }
+
+    .readmore {
+        color: var(--primary-color-500);
     }
 }

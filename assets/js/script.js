@@ -33,34 +33,34 @@
     });
 
 
-    
-  // 2. Mobile Menu
-  $(".moble-menu-trigger-btn").on("click", function () {
 
-    $(".pp-mobile-menu-wrapper").addClass("active");
-  });
+    // 2. Mobile Menu
+    $(".moble-menu-trigger-btn").on("click", function () {
 
-  $(".pp-mobile-menu-wrapper .close").on("click", function () {
-    $(".pp-mobile-menu-wrapper").removeClass("active");
-  });
-
-  $(".pp-mobile-menu-wrapper ul li.has-submenu").each(function () {
-    $(this).on("click", function () {
-      $(this).children("ul").slideToggle();
-      $(this).children("i").toggleClass("icon-rotate");
+      $(".pp-mobile-menu-wrapper").addClass("active");
     });
-  });
 
-  $(document).on("mouseup", function (e) {
-    var offCanvusMenu = $(".pp-mobile-menu-wrapper");
-
-    if (
-      !offCanvusMenu.is(e.target) &&
-      offCanvusMenu.has(e.target).length === 0
-    ) {
+    $(".pp-mobile-menu-wrapper .close").on("click", function () {
       $(".pp-mobile-menu-wrapper").removeClass("active");
-    }
-  });
+    });
+
+    $(".pp-mobile-menu-wrapper ul li.has-submenu").each(function () {
+      $(this).on("click", function () {
+        $(this).children("ul").slideToggle();
+        $(this).children("i").toggleClass("icon-rotate");
+      });
+    });
+
+    $(document).on("mouseup", function (e) {
+      var offCanvusMenu = $(".pp-mobile-menu-wrapper");
+
+      if (
+        !offCanvusMenu.is(e.target) &&
+        offCanvusMenu.has(e.target).length === 0
+      ) {
+        $(".pp-mobile-menu-wrapper").removeClass("active");
+      }
+    });
 
     // nice select
     $('select').niceSelect();
@@ -80,6 +80,38 @@
         768: { items: 2 },
         992: { items: 3 },
       },
+    });
+
+
+    const descriptions = document.querySelectorAll(".gp-single-testimonial .des");
+
+    descriptions.forEach((desParagraph) => {
+      const fullText = desParagraph.innerText.trim();
+      const readMoreButton = desParagraph.querySelector(".readmore");
+  
+      if (fullText.length <= 600) {
+        readMoreButton.style.display = "none";  
+      } else {
+ 
+        const shortText = fullText.slice(0, 600) + "...";
+        const textContentElement = document.createElement('span');
+        textContentElement.classList.add('text-content');
+        textContentElement.textContent = shortText;
+  
+        // Clear the existing content and append the necessary elements
+        desParagraph.innerHTML = '';
+        desParagraph.appendChild(textContentElement);
+        desParagraph.appendChild(readMoreButton);
+  
+        // Event listener to toggle text on click
+        readMoreButton.addEventListener("click", function () {
+          const isExpanded = textContentElement.textContent === fullText;
+  
+          // Toggle between full and short text
+          textContentElement.textContent = isExpanded ? shortText : fullText;
+          readMoreButton.textContent = isExpanded ? "Read More..." : "Show Less";
+        });
+      }
     });
 
 
