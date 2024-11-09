@@ -1,0 +1,103 @@
+.gp-table {
+    border-radius: 26px;
+    border: 1px solid var(--neutral-color-100);
+
+    .table {
+        margin-bottom: 0px;
+
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background-color: var(--neutral-color-50);
+                }
+            }
+        }
+
+        th,
+        td {
+
+            min-width: 200px;
+            vertical-align: middle;
+        }
+
+        th {
+            padding: 28px 60px;
+
+            @include screen-1440 {
+                padding: 20px 40px;
+            }
+
+            @include screen-1200 {
+                padding: 15px 30px;
+            }
+
+            @include screen-992 {
+                padding: 12px 20px;
+            }
+        }
+
+        td {
+            padding: 16px 60px;
+
+            @include screen-992 {
+                padding: 12px 20px;
+            }
+        }
+
+        thead {
+            background-color: var(--primary-color-500);
+            padding: 28px 60px;
+
+            th {
+                color: var(--white-color, #FFF);
+                font-family: var(--template-font);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+
+                @include screen-1440 {
+                    font-size: 20px;
+                }
+
+                @include screen-1200 {
+                    font-size: 18px;
+                }
+
+                @include screen-992 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .user-box {
+            display: flex;
+            align-items: center;
+            gap: 13.889px;
+
+            img {
+                width: 48px;
+                height: 48px;
+                border-radius: 48px;
+            }
+        }
+
+        .td-txt {
+            color: var(--neutral-color-700, #404953);
+            font-family: var(--template-font);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+
+            @include screen-1440 {
+                font-size: 16px;
+            }
+
+            @include screen-1200 {
+                font-size: 14px;
+            }
+        }
+
+    }
+}

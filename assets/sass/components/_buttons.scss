@@ -52,3 +52,62 @@
     background: var(--neutral-color-800);
     color: var(--white-color);
 }
+
+// tab button
+.nav {
+    .nav-item {
+        &:first-child {
+            .nav-link {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+        }
+
+        &:last-child {
+            .nav-link {
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+
+        .nav-link {
+            display: flex;
+            width: 140px;
+            height: 56px;
+            padding: 16px 40px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: var(--radius-md, 8px) 0px 0px var(--radius-md, 8px);
+            background: var(--neutral-color-100, #E6E7E8);
+            color: var(--neutral-color-950, #000C1A);
+            font-family: var(--template-font);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+
+            @include screen-1440 {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            @include screen-992 {
+                padding: 10px 20px;
+                font-size: 14px;
+                height: inherit;
+            }
+
+
+
+            &.active {
+                background: var(--primary-color-500, #007BFF);
+                color: var(--white-color);
+            }
+        }
+    }
+}
